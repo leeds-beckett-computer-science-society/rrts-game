@@ -8,8 +8,8 @@
 #include <SDL2/SDL_opengl.h>
 #endif
 
-#define WinWidth 500
-#define WinHeight 500
+#define WinWidth 1280
+#define WinHeight 720
 
 float r, g, b = 0.0f;
 bool Running = true;
@@ -79,7 +79,7 @@ int main(int argc, char *argv[]) {
     SDL_GL_SetSwapInterval(1);
 
 #ifdef EMSCRIPTEN
-    emscripten_set_main_loop(frame, 30, true);
+    emscripten_set_main_loop(frame, 60, true);
 #else
     while (Running) {
         frame();

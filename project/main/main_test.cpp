@@ -3,7 +3,6 @@
 #include <gmock/gmock.h>
 
 // Import tests for running
-#include "test/ApplicationTest.hpp"
 
 int main(int argc, char* argv[])
 {
