@@ -1,6 +1,6 @@
 # Game
 
 # Requirements
-- SDL2
+- GLFW
 - GLEW
 - Emscripten

@@ -2,16 +2,200 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="testing" targetName="test-gtx_matrix_decompose" />
+      <config projectName="testing" targetName="test-ext_matrix_transform" />
+      <config projectName="testing" targetName="test-ext_vector_iec559" />
+      <config projectName="testing" targetName="boing" />
+      <config projectName="testing" targetName="test-core_force_pure" />
+      <config projectName="testing" targetName="iconify" />
+      <config projectName="testing" targetName="test-gtc_reciprocal" />
+      <config projectName="testing" targetName="test-gtc_matrix_access" />
+      <config projectName="testing" targetName="test-gtx_functions" />
+      <config projectName="testing" targetName="test-gtx_intersect" />
       <config projectName="testing" targetName="SDL2" />
-      <config projectName="testing" targetName="testing_test" />
-      <config projectName="testing" targetName="uninstall" />
-      <config projectName="testing" targetName="gmock_main" />
-      <config projectName="testing" targetName="gtest" />
       <config projectName="testing" targetName="testing_main" />
+      <config projectName="testing" targetName="test-gtx_load" />
+      <config projectName="testing" targetName="test-core_type_ctor" />
+      <config projectName="testing" targetName="test-core_type_length" />
+      <config projectName="testing" targetName="test-perf_matrix_inverse" />
+      <config projectName="testing" targetName="gamma" />
+      <config projectName="testing" targetName="test-gtc_color_space" />
+      <config projectName="testing" targetName="test-gtx_dual_quaternion" />
+      <config projectName="testing" targetName="sharing" />
+      <config projectName="testing" targetName="test-core_func_integer_find_lsb" />
+      <config projectName="testing" targetName="test-gtc_quaternion" />
+      <config projectName="testing" targetName="test-gtx_matrix_transform_2d" />
+      <config projectName="testing" targetName="test-ext_quaternion_exponential" />
+      <config projectName="testing" targetName="test-gtx_matrix_factorisation" />
+      <config projectName="testing" targetName="testing_test" />
+      <config projectName="testing" targetName="timeout" />
+      <config projectName="testing" targetName="test-gtx_exterior_product" />
+      <config projectName="testing" targetName="test-gtx_color_space_YCoCg" />
+      <config projectName="testing" targetName="test-gtx_range" />
+      <config projectName="testing" targetName="test-core_force_aligned_gentypes" />
       <config projectName="testing" targetName="gmock" />
+      <config projectName="testing" targetName="test-perf_matrix_div" />
       <config projectName="testing" targetName="SDL2main" />
-      <config projectName="testing" targetName="SDL2-static" />
+      <config projectName="testing" targetName="test-core_cpp_defaulted_ctor" />
+      <config projectName="testing" targetName="test-gtx_component_wise" />
+      <config projectName="testing" targetName="test-core_type_mat2x4" />
+      <config projectName="testing" targetName="test-core_type_mat2x3" />
+      <config projectName="testing" targetName="test-core_type_mat2x2" />
+      <config projectName="testing" targetName="test-gtc_constants" />
+      <config projectName="testing" targetName="test-gtx_integer" />
+      <config projectName="testing" targetName="test-gtx_matrix_cross_product" />
+      <config projectName="testing" targetName="glfw" />
+      <config projectName="testing" targetName="test-gtx_texture" />
+      <config projectName="testing" targetName="test-gtx_log_base" />
+      <config projectName="testing" targetName="test-gtx_common" />
+      <config projectName="testing" targetName="heightmap" />
+      <config projectName="testing" targetName="test-ext_quaternion_transform" />
+      <config projectName="testing" targetName="test-ext_scalar_relational" />
+      <config projectName="testing" targetName="test-ext_vector_ulp" />
+      <config projectName="testing" targetName="reopen" />
+      <config projectName="testing" targetName="test-gtc_ulp" />
+      <config projectName="testing" targetName="test-gtx_polar_coordinates" />
+      <config projectName="testing" targetName="test-core_func_common" />
+      <config projectName="testing" targetName="test-gtx_perpendicular" />
+      <config projectName="testing" targetName="test-ext_vector_common" />
+      <config projectName="testing" targetName="test-gtx_vec_swizzle" />
+      <config projectName="testing" targetName="test-core_func_integer" />
+      <config projectName="testing" targetName="test-core_func_vector_relational" />
+      <config projectName="testing" targetName="test-gtx_vector_angle" />
+      <config projectName="testing" targetName="opacity" />
+      <config projectName="testing" targetName="test-gtx_handed_coordinate_space" />
+      <config projectName="testing" targetName="test-core_force_unrestricted_gentype" />
+      <config projectName="testing" targetName="test-gtx_quaternion" />
+      <config projectName="testing" targetName="test-ext_scalar_ulp" />
+      <config projectName="testing" targetName="test-perf_matrix_mul" />
+      <config projectName="testing" targetName="test-ext_matrix_relational" />
+      <config projectName="testing" targetName="monitors" />
+      <config projectName="testing" targetName="test-core_type_vec2" />
+      <config projectName="testing" targetName="test-ext_scalar_common" />
+      <config projectName="testing" targetName="test-gtx_projection" />
+      <config projectName="testing" targetName="test-ext_quaternion_type" />
+      <config projectName="testing" targetName="test-gtx_color_space" />
+      <config projectName="testing" targetName="simple" />
+      <config projectName="testing" targetName="test-core_type_mat4x4" />
+      <config projectName="testing" targetName="test-core_type_mat4x3" />
+      <config projectName="testing" targetName="test-core_type_mat4x2" />
+      <config projectName="testing" targetName="test-core_force_xyzw_only" />
+      <config projectName="testing" targetName="test-gtc_matrix_integer" />
+      <config projectName="testing" targetName="test-gtc_matrix_transform" />
+      <config projectName="testing" targetName="test-ext_vector_bool1" />
+      <config projectName="testing" targetName="gears" />
+      <config projectName="testing" targetName="test-gtc_type_aligned" />
+      <config projectName="testing" targetName="msaa" />
+      <config projectName="testing" targetName="test-gtx_fast_square_root" />
+      <config projectName="testing" targetName="test-gtx_fast_exponential" />
+      <config projectName="testing" targetName="glfwinfo" />
+      <config projectName="testing" targetName="test-gtx_euler_angle" />
+      <config projectName="testing" targetName="test-core_func_trigonometric" />
+      <config projectName="testing" targetName="test-gtx_norm" />
+      <config projectName="testing" targetName="test-perf_matrix_mul_vector" />
+      <config projectName="testing" targetName="test-core_force_explicit_ctor" />
+      <config projectName="testing" targetName="test-gtc_random" />
+      <config projectName="testing" targetName="test-core_func_integer_find_msb" />
+      <config projectName="testing" targetName="splitview" />
+      <config projectName="testing" targetName="test-gtx_vector_query" />
+      <config projectName="testing" targetName="test-ext_matrix_common" />
+      <config projectName="testing" targetName="test-bug_ms_vec_static" />
+      <config projectName="testing" targetName="test-ext_quaternion_relational" />
+      <config projectName="testing" targetName="test-gtx_associated_min_max" />
+      <config projectName="testing" targetName="test-gtx_rotate_normalized_axis" />
+      <config projectName="testing" targetName="test-gtc_packing" />
+      <config projectName="testing" targetName="icon" />
+      <config projectName="testing" targetName="test-core_func_exponential" />
+      <config projectName="testing" targetName="test-gtx_scalar_relational" />
+      <config projectName="testing" targetName="test-core_func_integer_bit_count" />
+      <config projectName="testing" targetName="test-gtc_type_ptr" />
+      <config projectName="testing" targetName="test-gtc_epsilon" />
+      <config projectName="testing" targetName="test-gtx_rotate_vector" />
+      <config projectName="testing" targetName="test-gtx_string_cast" />
+      <config projectName="testing" targetName="test-ext_scalar_uint_sized" />
+      <config projectName="testing" targetName="test-core_setup_precision" />
+      <config projectName="testing" targetName="test-gtx_normal" />
+      <config projectName="testing" targetName="test-core_func_swizzle" />
+      <config projectName="testing" targetName="test-ext_quaternion_common" />
+      <config projectName="testing" targetName="title" />
+      <config projectName="testing" targetName="test-gtx" />
+      <config projectName="testing" targetName="test-core_type_mat3x3" />
+      <config projectName="testing" targetName="test-gtx_scalar_multiplication" />
+      <config projectName="testing" targetName="test-core_type_mat3x4" />
+      <config projectName="testing" targetName="clipboard" />
+      <config projectName="testing" targetName="test-gtx_matrix_operation" />
+      <config projectName="testing" targetName="test-gtx_extended_min_max" />
+      <config projectName="testing" targetName="test-gtx_number_precision" />
+      <config projectName="testing" targetName="test-ext_quaternion_geometric" />
       <config projectName="testing" targetName="gtest_main" />
+      <config projectName="testing" targetName="gtest" />
+      <config projectName="testing" targetName="test-gtx_matrix_major_storage" />
+      <config projectName="testing" targetName="cursor" />
+      <config projectName="testing" targetName="test-gtc_type_precision" />
+      <config projectName="testing" targetName="test-perf_matrix_transpose" />
+      <config projectName="testing" targetName="test-ext_vector_integer" />
+      <config projectName="testing" targetName="test-core_func_matrix" />
+      <config projectName="testing" targetName="gmock_main" />
+      <config projectName="testing" targetName="test-ext_vec1" />
+      <config projectName="testing" targetName="threads" />
+      <config projectName="testing" targetName="particles" />
+      <config projectName="testing" targetName="test-core_setup_message" />
+      <config projectName="testing" targetName="uninstall" />
+      <config projectName="testing" targetName="test-perf_vector_mul_matrix" />
+      <config projectName="testing" targetName="test-gtx_io" />
+      <config projectName="testing" targetName="test-core_type_mat3x2" />
+      <config projectName="testing" targetName="test-gtx_easing" />
+      <config projectName="testing" targetName="test-gtc_integer" />
+      <config projectName="testing" targetName="windows" />
+      <config projectName="testing" targetName="test-gtx_optimum_pow" />
+      <config projectName="testing" targetName="test-core_type_vec4" />
+      <config projectName="testing" targetName="SDL2-static" />
+      <config projectName="testing" targetName="test-gtx_type_aligned" />
+      <config projectName="testing" targetName="test-gtx_spline" />
+      <config projectName="testing" targetName="test-gtx_closest_point" />
+      <config projectName="testing" targetName="docs" />
+      <config projectName="testing" targetName="test-ext_scalar_int_sized" />
+      <config projectName="testing" targetName="test-ext_vector_relational" />
+      <config projectName="testing" targetName="empty" />
+      <config projectName="testing" targetName="inputlag" />
+      <config projectName="testing" targetName="test-gtx_normalize_dot" />
+      <config projectName="testing" targetName="tearing" />
+      <config projectName="testing" targetName="test-core_force_inline" />
+      <config projectName="testing" targetName="test-core_func_noise" />
+      <config projectName="testing" targetName="events" />
+      <config projectName="testing" targetName="test-core_type_aligned" />
+      <config projectName="testing" targetName="test-gtc_bitfield" />
+      <config projectName="testing" targetName="test-core_type_cast" />
+      <config projectName="testing" targetName="test-gtx_fast_trigonometry" />
+      <config projectName="testing" targetName="test-core_func_geometric" />
+      <config projectName="testing" targetName="test-core_setup_force_cxx98" />
+      <config projectName="testing" targetName="test-gtx_matrix_query" />
+      <config projectName="testing" targetName="test-core_type_vec3" />
+      <config projectName="testing" targetName="test-core_force_ctor_init" />
+      <config projectName="testing" targetName="test-core_type_vec1" />
+      <config projectName="testing" targetName="test-gtc_noise" />
+      <config projectName="testing" targetName="test-gtx_gradient_paint" />
+      <config projectName="testing" targetName="offscreen" />
+      <config projectName="testing" targetName="joysticks" />
+      <config projectName="testing" targetName="test-gtx_compatibility" />
+      <config projectName="testing" targetName="test-gtx_extend" />
+      <config projectName="testing" targetName="test-core_setup_force_size_t_length" />
+      <config projectName="testing" targetName="test-ext_quaternion_trigonometric" />
+      <config projectName="testing" targetName="glm_static" />
+      <config projectName="testing" targetName="test-core_setup_platform_unknown" />
+      <config projectName="testing" targetName="wave" />
+      <config projectName="testing" targetName="test-gtc_round" />
+      <config projectName="testing" targetName="test-gtx_matrix_interpolation" />
+      <config projectName="testing" targetName="test-gtx_wrap" />
+      <config projectName="testing" targetName="test-ext_scalar_constants" />
+      <config projectName="testing" targetName="test-gtx_type_trait" />
+      <config projectName="testing" targetName="test-core_type_int" />
+      <config projectName="testing" targetName="test-gtx_color_encoding" />
+      <config projectName="testing" targetName="test-gtx_orthonormalize" />
+      <config projectName="testing" targetName="test-core_func_packing" />
+      <config projectName="testing" targetName="test-gtc_matrix_inverse" />
+      <config projectName="testing" targetName="test-gtc_vec1" />
+      <config projectName="testing" targetName="test-core_cpp_constexpr" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -24,8 +208,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e564437a-1b6b-40bc-80be-1e0a0fe96d99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LICENCE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/glfw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/glm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/main/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/main/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/lib/googletest/CMakeFiles/" />
@@ -57,7 +247,7 @@
     <expand />
     <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Emscripten Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release" />
   <component name="FavoritesManager">
     <favorites_list name="Git">
       <favorite_root url="file://$PROJECT_DIR$/.gitignore" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
@@ -68,79 +258,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/main/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-              <folding>
-                <element signature="e#101#124#0" expanded="true" />
-                <element signature="e#2157#2197#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/main/main_test.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="960">
+              <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#101#153#0" expanded="true" />
+                <element signature="e#2105#2147#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LICENCE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Doxyfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8370">
-              <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/web/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
-              <folding>
-                <element signature="e#1869#1894#0" expanded="true" />
-                <element signature="e#1943#1967#0" expanded="true" />
-                <element signature="e#2467#2473#0" expanded="true" />
-                <element signature="e#2473#2479#0" expanded="true" />
-                <element signature="e#2479#2485#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-              </first_editor>
-              <second_editor />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -173,17 +315,19 @@
         <option value="$PROJECT_DIR$/Doxyfile" />
         <option value="$PROJECT_DIR$/project/main.cpp" />
         <option value="$PROJECT_DIR$/project/web/index.html" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/project/main/main.cpp" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/project/main/main_test.cpp" />
         <option value="$PROJECT_DIR$/LICENCE" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/project/main/main.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="960" />
-    <option name="height" value="1056" />
+    <option name="x" value="219" />
+    <option name="y" value="356" />
+    <option name="width" value="958" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -191,45 +335,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="latex" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Source Files'; set:Project Source Files; class com.jetbrains.cidr.lang.search.scopes.ProjectSourcesScopeProvider$SourceFilesScope">
           <expand>
@@ -296,6 +401,52 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="glfw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,7 +490,7 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testing_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="testing" TARGET_NAME="testing_main" CONFIG_NAME="Emscripten Debug" RUN_TARGET_PROJECT_NAME="testing" RUN_TARGET_NAME="testing_main">
+    <configuration name="testing_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="testing" TARGET_NAME="testing_main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="testing" RUN_TARGET_NAME="testing_main">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -369,6 +520,8 @@
       <workItem from="1552148443428" duration="7017000" />
       <workItem from="1552163105589" duration="1544000" />
       <workItem from="1552224845002" duration="6245000" />
+      <workItem from="1552421526728" duration="3275000" />
+      <workItem from="1552424974046" duration="444000" />
     </task>
     <task id="LOCAL-00001" summary="Added README and added web shell for future improvement">
       <created>1552248314956</created>
@@ -413,13 +566,22 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42683000" />
+    <option name="totallyTimeSpent" value="46402000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1922" height="1060" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15671642" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15478165" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -428,13 +590,13 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39911798" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291536" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.67346936" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.67293626" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32760474" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.3243824" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3291536" />
+      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.32706374" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32392895" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3296582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -463,11 +625,7 @@
     <entry file="file://$PROJECT_DIR$/project/test/ApplicationTest.hpp" />
     <entry file="file://$PROJECT_DIR$/src/main/Application_linux.cpp" />
     <entry file="file://$PROJECT_DIR$/src/main/Application.h" />
-    <entry file="file://$PROJECT_DIR$/lib/SDL2-2.0.9/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/SDL2-2.0.9/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/.gitmodules">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -485,59 +643,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
-          <folding>
-            <element signature="e#1869#1894#0" expanded="true" />
-            <element signature="e#1943#1967#0" expanded="true" />
-            <element signature="e#2467#2473#0" expanded="true" />
-            <element signature="e#2473#2479#0" expanded="true" />
-            <element signature="e#2479#2485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VERSION">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/project/web/index.html" />
+    <entry file="file://$PROJECT_DIR$/VERSION" />
     <entry file="file://$PROJECT_DIR$/Doxyfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8370">
+        <state relative-caret-position="900">
           <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/main/main.cpp">
+    <entry file="file://$PROJECT_DIR$/LICENCE">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-          <folding>
-            <element signature="e#101#124#0" expanded="true" />
-            <element signature="e#2157#2197#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -551,10 +669,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LICENCE">
+    <entry file="file://$PROJECT_DIR$/lib/glfw/src/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        <state relative-caret-position="-1051" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/glfw/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4756" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/main/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#101#153#0" expanded="true" />
+            <element signature="e#2105#2147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
         </state>
       </provider>
     </entry>
