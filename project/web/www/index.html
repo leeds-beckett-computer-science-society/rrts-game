@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
@@ -6,26 +7,67 @@
         <title>Emscripten-Generated Code</title>
 
         <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!-- bootstrap CDN --> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!--bootstrap javascript  -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     </head>
+    
+
+
     <body>
-        <hr/>
 
-        <figure style="overflow:visible;" id="spinner"><div class="spinner"></div><center style="margin-top:0.5em"><strong>emscripten</strong></center></figure>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="navbar-header">
+                <a href="" class="navbar-brand">
+                    <img src="csc-logo.png" alt=" " style="width: 256px;">
+                </a>
+            </div>
+            <ul class ="nav navbar-nav">
+                <li><a href="#"></a></li> <!-- Need to add options -->
+                <li><a href="#"></a></li> <!-- Need to add options -->
+                <li><a href="#"></a></li> <!-- Need to add options -->
+            </ul>
+            <ul class = "nav navbar">
+            </ul>
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+             </form>
+        </nav>
 
-        <div class="emscripten" id="status">Downloading...</div>
-        <div class="emscripten">
-            <progress value="0" max="100" id="progress" hidden=1></progress>
+
+        <div class="jumbotron text-center">
+            <h1>The Thunder Dominion</h1>
+            <p>The battle for the lightning begins!</p> 
         </div>
-        <div class="emscripten_border">
-            <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-        </div>
-        <hr/>
-        <div class="emscripten">
-            <input type="checkbox" id="resize">Resize canvas
-            <input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer
-            &nbsp;&nbsp;&nbsp;
-            <input type="button" value="Fullscreen" onclick="Module.requestFullscreen(document.getElementById('pointerLock').checked,
-                                                                                        document.getElementById('resize').checked)">
+
+
+        <div class="container">
+            <hr/>
+
+            <figure style="overflow:visible;" id="spinner"><div class="spinner"></div><center style="margin-top:0.5em"><strong>emscripten</strong></center></figure>
+
+            <div class="emscripten" id="status">Downloading...</div>
+            <div class="emscripten">
+                <progress value="0" max="100" id="progress" hidden=1></progress>
+            </div>
+            <div class="emscripten_border">
+                <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+            </div>
+            <hr/>
+            <div class="emscripten">
+                <input type="checkbox" id="resize">Resize canvas
+                <input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer
+                &nbsp;&nbsp;&nbsp;
+                <input type="button" value="Fullscreen" onclick="Module.requestFullscreen(document.getElementById('pointerLock').checked,
+                                                                                            document.getElementById('resize').checked)">
+            </div>
+
         </div>
 
         <hr/>
@@ -37,5 +79,6 @@
 
         <!-- Loads game from file -->
         <script async type="text/javascript" src="rrts_main.js"></script>
+
     </body>
 </html>
