@@ -16,7 +16,8 @@ if(EMSCRIPTEN)
     # Disabled - just output js file
 #    set(CMAKE_EXECUTABLE_SUFFIX ".html")
 #    set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} --shell-file '${CMAKE_SOURCE_DIR}/project/web/www/index.html' ${GCC_COVERAGE_COMPILE_FLAGS}")
-
+    file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/project/web/www/
+            DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/.)
     set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -s USE_GLFW=3 -s WASM=1 -s USE_WEBGL2=1 -s ERROR_ON_UNDEFINED_SYMBOLS=0 -s FULL_ES2=1 -s FULL_ES3=1 ${GCC_COVERAGE_COMPILE_FLAGS}")
 endif()
 
