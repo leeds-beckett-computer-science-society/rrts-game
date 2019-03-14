@@ -1,38 +1,41 @@
 <!doctype html>
 <html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Emscripten-Generated Code</title>
 
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <hr/>
 
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <figure style="overflow:visible;" id="spinner"><div class="spinner"></div><center style="margin-top:0.5em"><strong>emscripten</strong></center></figure>
 
-    <title>Emscripten-Generated Code</title>  
-</head>
+        <div class="emscripten" id="status">Downloading...</div>
+        <div class="emscripten">
+            <progress value="0" max="100" id="progress" hidden=1></progress>
+        </div>
+        <div class="emscripten_border">
+            <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+        </div>
+        <hr/>
+        <div class="emscripten">
+            <input type="checkbox" id="resize">Resize canvas
+            <input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer
+            &nbsp;&nbsp;&nbsp;
+            <input type="button" value="Fullscreen" onclick="Module.requestFullscreen(document.getElementById('pointerLock').checked,
+                                                                                        document.getElementById('resize').checked)">
+        </div>
 
-<body>
-<hr/>
-<figure style="overflow:visible;" id="spinner"><div class="spinner"></div><center style="margin-top:0.5em"><strong>emscripten</strong></center></figure>
-<div class="emscripten" id="status">Downloading...</div>
-<div class="emscripten">
-    <progress value="0" max="100" id="progress" hidden=1></progress>
-</div>
-<div class="emscripten_border">
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-</div>
-<hr/>
-<div class="emscripten">
-    <input type="checkbox" id="resize">Resize canvas
-    <input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer
-    &nbsp;&nbsp;&nbsp;
-    <input type="button" value="Fullscreen" onclick="Module.requestFullscreen(document.getElementById('pointerLock').checked, document.getElementById('resize').checked)">
-</div>
+        <hr/>
+        <textarea class="emscripten" id="output" rows="8"></textarea>
+        <hr>
 
-<hr/>
-<textarea class="emscripten" id="output" rows="8"></textarea>
-<hr>
+        <!-- Required to load game -->
+        <script type='text/javascript' src="emscripten_loader.js"></script>
 
-{{{ SCRIPT }}}
-</body>
+        <!-- Loads game from file -->
+        <script async type="text/javascript" src="rrts_main.js"></script>
+    </body>
 </html>
