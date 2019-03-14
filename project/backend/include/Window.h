@@ -28,6 +28,7 @@ namespace rrts::Graphics
 	 * @param callback
 	 */
 	Window(int width, int height, std::function<void()> callback);
+
 	~Window();
 
 	/**
@@ -37,7 +38,6 @@ namespace rrts::Graphics
 
 	/**
 	 * Polls events and updates the input manager
-	 *
 	 * @warning program will halt if not called inside the game loop
 	 */
 	void pollEvents();
@@ -48,15 +48,33 @@ namespace rrts::Graphics
 	 */
 	void WhileRunning(std::function<void()> callback);
 
+	/**
+	 * Clears the screen to black
+	 */
+	void clear();
+
+	/**
+	 * Clears the screen and sets the colour to the rgb values inputted
+	 * @param r
+	 * @param g
+	 * @param b
+	 * @param a
+	 */
+	void clear(float r, float g, float b, float a);
+
     private:
+
 	void createWindow(int width, int height);
-        void setFrameCallBack(std::function<void()> callback);
+
+	void setFrameCallBack(std::function<void()> callback);
+
 	void runFrame();
+
 #ifdef EMSCRIPTEN
 	friend void frame(void* inst);
 #endif
 	GLFWwindow *window;
-        std::function<void()> frameCallback;
+	std::function<void()> frameCallback;
     };
 
 #ifdef EMSCRIPTEN

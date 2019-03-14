@@ -73,3 +73,15 @@ void rrts::Graphics::Window::setFrameCallBack(std::function<void()> callback)
 {
 	frameCallback = std::move(callback);
 }
+
+void rrts::Graphics::Window::clear(float r, float g, float b, float a)
+{
+	glViewport(0, 0, 1280, 720);
+	glClearColor(r, g, b, 1.f);
+	glClear(GL_COLOR_BUFFER_BIT);
+}
+
+void rrts::Graphics::Window::clear()
+{
+	clear(0.f,0.f,0.f,1.f);
+}
