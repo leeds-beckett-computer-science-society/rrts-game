@@ -19,15 +19,14 @@ void rrts::Graphics::Shader::loadFromFile(std::string vertex, std::string fragme
 		glDeleteProgram(programID);
 
 	programID = glCreateProgram();
-	if (!vertex.empty())
-	{
+
+	if (!vertex.empty()) {
 		vertexid = glCreateShader(GL_VERTEX_SHADER);
-		compileShader( LoadFile(std::move(vertex)), vertexid, GL_VERTEX_SHADER);
+		compileShader(LoadFile(std::move(vertex)), vertexid, GL_VERTEX_SHADER);
 		glAttachShader(programID, vertexid);
 		glDeleteShader(vertexid);
 	}
-	if (!fragment.empty())
-	{
+	if (!fragment.empty()) {
 		fragmentid = glCreateShader(GL_FRAGMENT_SHADER);
 		compileShader(LoadFile(std::move(fragment)), fragmentid, GL_FRAGMENT_SHADER);
 		glAttachShader(programID, fragmentid);
@@ -44,8 +43,7 @@ void rrts::Graphics::Shader::loadFromFile(std::string vertex, std::string fragme
 	std::string error;
 	int success = 0;
 	glGetProgramiv(programID, GL_LINK_STATUS, &success);
-	if (!success)
-	{
+	if (!success) {
 		error += "== PROGRAM ERROR == \n";
 		char info[1024];
 		glGetProgramInfoLog(programID, 1024, nullptr, info);
@@ -57,17 +55,26 @@ void rrts::Graphics::Shader::loadFromFile(std::string vertex, std::string fragme
 
 std::string rrts::Graphics::Shader::LoadFile(std::string path)
 {
-	std::string str;
+
 #ifdef EMSCRIPTEN
+	std::string str;
+	FILE *stream;
+	char *line = NULL;
+	size_t len = 0;
+	ssize_t read;
 
-	FILE *in_file  = fopen("name_of_file", "rb"); // read only
+	stream = fopen(path.c_str(), "r");
+	if (stream == NULL)
+		exit(EXIT_FAILURE);
 
-	if (in_file == NULL)
-	{
-		printf("Error! Could not open file\n");
-		exit(-1); // must include stdlib.h
+	while ((read = getline(&line, &len, stream)) != -1) {
+		str += line;
 	}
+
+	free(line);
+	fclose (stream);
 #else
+	std::string str;
 	{
 		std::ifstream stream(path);
 		for( std::string line; getline( stream, line ); )
@@ -85,8 +92,7 @@ std::string rrts::Graphics::Shader::errorCheck(unsigned int shader, unsigned int
 	std::string error;
 	int success = 0;
 	glGetShaderiv(shader, errortype, &success);
-	if (!success)
-	{
+	if (!success) {
 		error += message + "\n";
 		char info[1024];
 		glGetShaderInfoLog(shader, 1024, nullptr, info);
@@ -97,7 +103,7 @@ std::string rrts::Graphics::Shader::errorCheck(unsigned int shader, unsigned int
 
 void rrts::Graphics::Shader::compileShader(std::string source, unsigned int id, unsigned int type)
 {
-	const GLchar* c_src = source.c_str();
+	const char *c_src = source.c_str();
 	glShaderSource(id, 1, &c_src, nullptr);
 	glCompileShader(id);
 	std::cout << errorCheck(id, GL_COMPILE_STATUS, "== SHADER ERROR ==");

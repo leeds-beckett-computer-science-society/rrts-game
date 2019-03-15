@@ -209,15 +209,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e564437a-1b6b-40bc-80be-1e0a0fe96d99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project/backend/include/Shader.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/backend/source/Shader.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/resources/shaders/fragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/resources/shaders/vertex.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/backend/include/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/include/Window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/backend/source/Window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/source/Window.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/main/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/main/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/backend/source/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/source/Shader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/shaders/fragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/shaders/fragment.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/resources/shaders/vertex.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/project/resources/shaders/vertex.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/web/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/web/www/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -258,44 +254,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/resources/shaders/fragment.glsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/backend/source/Shader.cpp">
+        <entry file="file://$PROJECT_DIR$/build/debug/web/rrts_main.data">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/web/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/main/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -344,17 +316,20 @@
         <option value="$PROJECT_DIR$/project/backend/source/Window.cpp" />
         <option value="$PROJECT_DIR$/project/backend/include/Window.h" />
         <option value="$PROJECT_DIR$/project/backend/include/Shader.h" />
-        <option value="$PROJECT_DIR$/project/resources/shaders/vertex.glsl" />
-        <option value="$PROJECT_DIR$/project/resources/shaders/fragment.glsl" />
         <option value="$PROJECT_DIR$/project/main/main.cpp" />
         <option value="$PROJECT_DIR$/project/web/www/index.html" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/project/backend/source/Shader.cpp" />
+        <option value="$PROJECT_DIR$/build/debug/native/shaders/vertex.glsl" />
+        <option value="$PROJECT_DIR$/project/resources/shaders/vertex.glsl" />
+        <option value="$PROJECT_DIR$/project/resources/shaders/fragment.glsl" />
+        <option value="$PROJECT_DIR$/build/debug/web/rrts_main.data" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1056" />
   </component>
@@ -387,7 +362,30 @@
               <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="debug" type="462c0819:PsiDirectoryNode" />
+              <item name="native" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rrts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
+              <item name="native" type="462c0819:PsiDirectoryNode" />
+              <item name="shaders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rrts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rrts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="shaders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rrts" type="b2602c69:ProjectViewProjectNode" />
@@ -524,8 +522,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/project/resources/shaders" />
+      <recent name="$PROJECT_DIR$/build/debug/native/shaders" />
+      <recent name="$PROJECT_DIR$/build/debug/web/shaders" />
+      <recent name="$PROJECT_DIR$/build/debug/native" />
       <recent name="$PROJECT_DIR$/build/debug/web" />
-      <recent name="$PROJECT_DIR$/project/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/project/backend/source" />
@@ -602,7 +602,7 @@
       <workItem from="1552575078232" duration="457000" />
       <workItem from="1552575554932" duration="1170000" />
       <workItem from="1552594928310" duration="4076000" />
-      <workItem from="1552599668136" duration="6069000" />
+      <workItem from="1552599668136" duration="10630000" />
     </task>
     <task id="LOCAL-00001" summary="Added README and added web shell for future improvement">
       <created>1552248314956</created>
@@ -647,7 +647,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65570000" />
+    <option name="totallyTimeSpent" value="70131000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -659,25 +659,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1922" height="1060" extended-state="6" />
+    <frame x="960" y="0" width="960" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32822758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3780881" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37756202" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39849624" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291536" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.30075186" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946696" weight="0.30075186" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.30075186" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3291536" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.22341569" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.2244898" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.22545847" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3296582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -806,7 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/debug/web/rrts_main.html" />
     <entry file="file://$PROJECT_DIR$/project/web/www/script.js" />
     <entry file="file://$PROJECT_DIR$/project/web/www/emscripten_loader.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -838,20 +837,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build/debug/web/styles.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/debug/web/shaders/fragment.glsl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/backend/source/Window.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="73" column="44" lean-forward="true" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#726#794#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/resources/shaders/fragment.glf">
       <provider selected="true" editor-type-id="text-editor">
@@ -892,39 +877,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/resources/shaders/vertex.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/resources/shaders/fragment.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/backend/include/Shader.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/main/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/debug/web/rrts_main.data">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/build/debug/web/rrts_main.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -936,10 +894,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/build/debug/web/rrts_main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        <state relative-caret-position="420">
+          <caret line="1295" column="69" lean-forward="true" selection-start-line="1295" selection-start-column="69" selection-end-line="1295" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -952,11 +910,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/backend/source/Shader.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
+        <state relative-caret-position="420">
+          <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#1787#1940#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/backend/source/Window.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="73" column="44" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/main/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/debug/native/shaders/vertex.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/debug/web/shaders/vertex.glsl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/debug/web/shaders/fragment.glsl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/resources/shaders/vertex.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/resources/shaders/fragment.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/debug/web/rrts_main.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
