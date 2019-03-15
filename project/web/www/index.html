@@ -27,17 +27,6 @@
                     <img src="csc-logo.png" alt=" " style="width: 256px;">
                 </a>
             </div>
-            <ul class ="nav navbar-nav">
-                <li><a href="#"></a></li> <!-- Need to add options -->
-                <li><a href="#"></a></li> <!-- Need to add options -->
-                <li><a href="#"></a></li> <!-- Need to add options -->
-            </ul>
-            <ul class = "nav navbar">
-            </ul>
-            <form class="form-inline" action="/action_page.php">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-             </form>
         </nav>
 
 
@@ -47,7 +36,7 @@
         </div>
 
 
-        <div class="container">
+        <div class="container-fluid">
             <hr/>
 
             <figure style="overflow:visible;" id="spinner"><div class="spinner"></div><center style="margin-top:0.5em"><strong>emscripten</strong></center></figure>
@@ -59,13 +48,15 @@
             <div class="emscripten_border">
                 <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
             </div>
-            <hr/>
-            <div class="emscripten">
-                <input type="checkbox" id="resize">Resize canvas
-                <input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer
-                &nbsp;&nbsp;&nbsp;
-                <input type="button" value="Fullscreen" onclick="Module.requestFullscreen(document.getElementById('pointerLock').checked,
-                                                                                            document.getElementById('resize').checked)">
+
+            <div class="container" style="padding-top: 2vh">
+                <div class="emscripten">
+                    <input type="checkbox" id="resize">Resize canvas
+                    <input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="button" value="Fullscreen" onclick="Module.requestFullscreen(document.getElementById('pointerLock').checked,
+                                                                                                document.getElementById('resize').checked)">
+                </div>
             </div>
 
         </div>
@@ -74,11 +65,10 @@
         <textarea class="emscripten" id="output" rows="8"></textarea>
         <hr>
 
-        <!-- Required to load game -->
         <script type='text/javascript' src="emscripten_loader.js"></script>
-
-        <!-- Loads game from file -->
         <script async type="text/javascript" src="rrts_main.js"></script>
-
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

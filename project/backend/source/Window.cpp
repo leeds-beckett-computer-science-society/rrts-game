@@ -38,7 +38,7 @@ void rrts::Graphics::Window::WhileRunning(std::function<void()> callback)
 	setFrameCallBack(std::move(callback));
 
 #ifdef EMSCRIPTEN
-	emscripten_set_main_loop_arg(rrts::Graphics::frame, this, 60, true);
+	emscripten_set_main_loop_arg(rrts::Graphics::frame, this, 0, true);
 #else
 	while (!glfwWindowShouldClose(window)) {
 		frameCallback();
@@ -72,4 +72,16 @@ void rrts::Graphics::Window::runFrame()
 void rrts::Graphics::Window::setFrameCallBack(std::function<void()> callback)
 {
 	frameCallback = std::move(callback);
+}
+
+void rrts::Graphics::Window::clear(float r, float g, float b, float a)
+{
+	glViewport(0, 0, 1280, 720);
+	glClearColor(r, g, b, 1.f);
+	glClear(GL_COLOR_BUFFER_BIT);
+}
+
+void rrts::Graphics::Window::clear()
+{
+	clear(0.f,0.f,0.f,1.f);
 }
