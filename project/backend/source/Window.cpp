@@ -38,7 +38,7 @@ void rrts::Graphics::Window::WhileRunning(std::function<void()> callback)
 	setFrameCallBack(std::move(callback));
 
 #ifdef EMSCRIPTEN
-	emscripten_set_main_loop_arg(rrts::Graphics::frame, this, 60, true);
+	emscripten_set_main_loop_arg(rrts::Graphics::frame, this, 0, true);
 #else
 	while (!glfwWindowShouldClose(window)) {
 		frameCallback();
