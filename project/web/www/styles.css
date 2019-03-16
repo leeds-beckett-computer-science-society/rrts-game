@@ -2,9 +2,20 @@
     background-image: url("thunder-sky.jpg"); 
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
+    font
 }
 
-/*https://unsplash.com/photos/L4-16dmZ-1c*/
+h1 {
+    font-family: 'VT323', 'monospace';
+    text-align: center;
+    color: rgb(122, 247, 49);
+}
+
+#index-body {
+    background-color: black;
+}
+
+
 
 .emscripten { padding-right: 0; margin-left: auto; margin-right: auto; display: block; }
 textarea.emscripten { font-family: monospace; width: 80%; }

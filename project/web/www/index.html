@@ -1,74 +1,76 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8">
+<head>
+    <title>Leeds Beckett Computer Science Society</title>
+
+    <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>Emscripten-Generated Code</title>
 
         <link rel="stylesheet" type="text/css" href="styles.css">
 
         <!-- Google font -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
         <!-- bootstrap CDN --> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <!--bootstrap javascript  -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    </head>
+</head>
+
+
+<body id="index-body">
     
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">
+                <img src="csc-logo.png" alt=" " style="width: 256px;">
+            </a>
+            <ul class="navbar-nav">
 
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                    Home
+                    </a>
+                </li>
 
-    <body>
+                <li class="nav-item">
+                    <a class="nav-link" href="rts-game.html">
+                    Game
+                    </a>
+                </li>
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <div class="navbar-header">
-                <a href="" class="navbar-brand">
-                    <img src="csc-logo.png" alt=" " style="width: 256px;">
-                </a>
-            </div>
-        </nav>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                    Upcoming Events
+                    </a>
+                </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                    Contact Us
+                    </a>
+                </li>
 
-        <div class="jumbotron text-center">
-            <h1>The Thunder Dominion</h1>
-            <p>The battle for the lightning begins!</p> 
-        </div>
-
-
-        <div class="container-fluid">
-            <hr/>
-
-            <figure style="overflow:visible;" id="spinner"><div class="spinner"></div><center style="margin-top:0.5em"><strong>emscripten</strong></center></figure>
-
-            <div class="emscripten" id="status">Downloading...</div>
-            <div class="emscripten">
-                <progress value="0" max="100" id="progress" hidden=1></progress>
-            </div>
-            <div class="emscripten_border">
-                <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-            </div>
-
-            <div class="container" style="padding-top: 2vh">
-                <div class="emscripten">
-                    <input type="checkbox" id="resize">Resize canvas
-                    <input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer
-                    &nbsp;&nbsp;&nbsp;
-                    <input type="button" value="Fullscreen" onclick="Module.requestFullscreen(document.getElementById('pointerLock').checked,
-                                                                                                document.getElementById('resize').checked)">
-                </div>
-            </div>
+            </ul>
 
         </div>
+    </nav>
 
-        <hr/>
-        <textarea class="emscripten" id="output" rows="8"></textarea>
-        <hr>
+    <container>
+    <h1> > Welcome to Leeds Beckett Computer Science Society </h1>
+    </container>
 
-        <script type='text/javascript' src="emscripten_loader.js"></script>
+
+    <!-- <div class="jumbotron text-center">
+        <h1>Welcome</h1>
+        <p>Leeds Beckett Computer Science Society</p> 
+    </div> -->
+
+    <script type='text/javascript' src="emscripten_loader.js"></script>
         <script async type="text/javascript" src="rrts_main.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+</body>
 </html>
