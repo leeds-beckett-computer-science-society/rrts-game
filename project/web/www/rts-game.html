@@ -57,7 +57,7 @@
         </div>
     </nav>
 
-        <div class="container">
+        <div class="container-fluid">
             <hr/>
 
             <figure style="overflow:visible;" id="spinner"><div class="spinner"></div><center style="margin-top:0.5em"><strong>emscripten</strong></center></figure>
@@ -70,13 +70,15 @@
                 <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
             </div>
             <hr/>
-            <div class="emscripten">
-                <input type="checkbox" id="resize">Resize canvas
-                <input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer
-                &nbsp;&nbsp;&nbsp;
-                <input type="button" value="Fullscreen" onclick="Module.requestFullscreen(document.getElementById('pointerLock').checked,
-                                                                                            document.getElementById('resize').checked)">
-            </div>
+			<div class="container-fluid">
+		        <div class="emscripten">
+		            <input type="checkbox" id="resize">Resize canvas
+		            <input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer
+		            &nbsp;&nbsp;&nbsp;
+		            <input type="button" value="Fullscreen" onclick="Module.requestFullscreen(document.getElementById('pointerLock').checked,
+		                                                                                        document.getElementById('resize').checked)">
+		        </div>
+			</div>
 
         </div>
 
