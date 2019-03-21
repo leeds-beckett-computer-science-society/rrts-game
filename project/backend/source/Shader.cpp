@@ -1,5 +1,4 @@
 #include <utility>
-
 #include <Shader.h>
 #include <GL/glew.h>
 #include <string>
@@ -24,13 +23,11 @@ void rrts::Graphics::Shader::loadFromFile(std::string vertex, std::string fragme
 		vertexid = glCreateShader(GL_VERTEX_SHADER);
 		compileShader(LoadFile(std::move(vertex)), vertexid, GL_VERTEX_SHADER);
 		glAttachShader(programID, vertexid);
-		glDeleteShader(vertexid);
 	}
 	if (!fragment.empty()) {
 		fragmentid = glCreateShader(GL_FRAGMENT_SHADER);
 		compileShader(LoadFile(std::move(fragment)), fragmentid, GL_FRAGMENT_SHADER);
 		glAttachShader(programID, fragmentid);
-		glDeleteShader(fragmentid);
 	}
 //	if (!geometry.empty())
 //	{
@@ -51,6 +48,8 @@ void rrts::Graphics::Shader::loadFromFile(std::string vertex, std::string fragme
 	}
 	std::cout << error << "\n";
 	glUseProgram(0);
+	glDeleteShader(vertexid);
+	glDeleteShader(fragmentid);
 }
 
 std::string rrts::Graphics::Shader::LoadFile(std::string path)
@@ -84,7 +83,7 @@ std::string rrts::Graphics::Shader::LoadFile(std::string path)
 		stream.close();
 	}
 #endif
-	return std::move(str);
+	return str;
 }
 
 std::string rrts::Graphics::Shader::errorCheck(unsigned int shader, unsigned int errortype, std::string message)
@@ -106,10 +105,10 @@ void rrts::Graphics::Shader::compileShader(std::string source, unsigned int id, 
 	const char *c_src = source.c_str();
 	glShaderSource(id, 1, &c_src, nullptr);
 	glCompileShader(id);
-	std::cout << errorCheck(id, GL_COMPILE_STATUS, "== SHADER ERROR ==");
+	std::cout << errorCheck(id, GL_COMPILE_STATUS, "== SHADER INFO ==");
 }
 
 void rrts::Graphics::Shader::bind()
 {
-
+	glUseProgram(programID);
 }

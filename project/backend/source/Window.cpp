@@ -1,7 +1,7 @@
 #include <Window.h>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-
+#include <iostream>
 #ifdef EMSCRIPTEN
 #include <emscripten.h>
 #endif
@@ -49,11 +49,13 @@ void rrts::Graphics::Window::WhileRunning(std::function<void()> callback)
 void rrts::Graphics::Window::createWindow(int width, int height)
 {
 	if (!glfwInit()) {
-		// Initialization failed
+		std::cout << "GLFW failed to initialize \n";
 	}
 
+	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+	glfwWindowHint(GLFW_CLIENT_API, GLFW_OPENGL_ES_API);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
 
 	window = glfwCreateWindow(width, height, "Window", nullptr, nullptr);
 	if (!window) {
@@ -61,7 +63,11 @@ void rrts::Graphics::Window::createWindow(int width, int height)
 	}
 	glfwMakeContextCurrent(window);
 	glewExperimental = GL_TRUE;
-	glewInit();
+	GLenum err=glewInit();
+	if(err!=GLEW_OK) {
+		std::cout << "glewInit failed: " << glewGetErrorString(err) << std::endl;
+		exit(1);
+	}
 }
 
 void rrts::Graphics::Window::runFrame()
