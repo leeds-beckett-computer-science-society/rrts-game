@@ -9,38 +9,23 @@
 #endif
 
 rrts::Graphics::Vertex vertices[] = {
-	glm::vec3(0.0f, 0.5f, 0.f), glm::vec3(1.0f, 0.0f, 0.f),  glm::vec2(0.0f, 1.f),
+	glm::vec3(-0.5f, 0.5f, 0.f), glm::vec3(1.0f, 0.0f, 0.f),  glm::vec2(0.0f, 1.f),
 	glm::vec3(-0.5f, -0.5f, 0.f), glm::vec3(0.0f, 1.0f, 0.f),glm::vec2(0.0f, 0.f),
-	glm::vec3(0.5f, -0.5f, 0.f), glm::vec3(0.0f, 0.0f, 1.f), glm::vec2(1.0f, 0.f)
+	glm::vec3(0.5f, -0.5f, 0.f), glm::vec3(0.0f, 0.0f, 1.f), glm::vec2(1.0f, 0.f),
+	glm::vec3(0.5f, 0.5f, 0.f), glm::vec3(0.0f, 0.0f, 1.f), glm::vec2(1.0f, 0.f),
 };
 unsigned int vert_size = sizeof(vertices) / sizeof(rrts::Graphics::Vertex);
 unsigned int indices[] = {
-	0, 1, 2
+	0, 1, 2,
+	0, 2, 3
 };
 
 unsigned int in_size = sizeof(indices) / sizeof(unsigned int);
-
-void GLAPIENTRY
-MessageCallback( GLenum source,
-                 GLenum type,
-                 GLuint id,
-                 GLenum severity,
-                 GLsizei length,
-                 const GLchar* message,
-                 const void* userParam )
-{
-	fprintf( stderr, "GL CALLBACK: %s type = 0x%x, severity = 0x%x, message = %s\n",
-	         ( type == GL_DEBUG_TYPE_ERROR ? "** GL ERROR **" : "" ),
-	         type, severity, message );
-}
 
 int main(int argc, char *argv[])
 {
 	float r = 0.0f, g = 0.0f, b = 0.0f;
 	rrts::Graphics::Window window(1280, 720);
-
-//	glEnable              ( GL_DEBUG_OUTPUT );
-//	glDebugMessageCallback( MessageCallback, 0 );
 
 	rrts::Graphics::Shader shader;
 	shader.loadFromFile("shaders/vertex.glsl", "shaders/fragment.glsl", "");

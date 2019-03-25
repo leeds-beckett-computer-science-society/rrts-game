@@ -15,9 +15,10 @@ namespace rrts::Graphics
     public:
 
     private:
-        void bind();
+        void bind() const;
+        void unbind() const;
 
-        void create();
+        void create(void * vertices);
     private:
         unsigned int bufferID;
         int size;
