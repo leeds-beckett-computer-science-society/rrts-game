@@ -8,21 +8,19 @@
       <config projectName="rrts" targetName="test-ext_quaternion_common" />
       <config projectName="rrts" targetName="title" />
       <config projectName="rrts" targetName="test-gtx_compatibility" />
-      <config projectName="rrts" targetName="test-ext_vector_bool1" />
+      <config projectName="rrts" targetName="test-gtx_matrix_transform_2d" />
       <config projectName="rrts" targetName="test-gtx_extended_min_max" />
       <config projectName="rrts" targetName="test-gtx_number_precision" />
-      <config projectName="rrts" targetName="test-gtx_dual_quaternion" />
       <config projectName="rrts" targetName="test-gtx_matrix_major_storage" />
       <config projectName="rrts" targetName="gtest" />
       <config projectName="rrts" targetName="cursor" />
-      <config projectName="rrts" targetName="opacity" />
       <config projectName="rrts" targetName="wave" />
       <config projectName="rrts" targetName="test-perf_matrix_transpose" />
+      <config projectName="rrts" targetName="test-perf_matrix_mul_vector" />
       <config projectName="rrts" targetName="test-ext_vec1" />
       <config projectName="rrts" targetName="gmock_main" />
       <config projectName="rrts" targetName="threads" />
       <config projectName="rrts" targetName="particles" />
-      <config projectName="rrts" targetName="test-core_force_xyzw_only" />
       <config projectName="rrts" targetName="test-core_setup_message" />
       <config projectName="rrts" targetName="test-ext_scalar_int_sized" />
       <config projectName="rrts" targetName="test-perf_vector_mul_matrix" />
@@ -31,16 +29,15 @@
       <config projectName="rrts" targetName="test-gtx_vector_angle" />
       <config projectName="rrts" targetName="windows" />
       <config projectName="rrts" targetName="test-gtx_normalize_dot" />
-      <config projectName="rrts" targetName="test-core_func_trigonometric" />
+      <config projectName="rrts" targetName="test-core_cpp_defaulted_ctor" />
+      <config projectName="rrts" targetName="test-gtx_matrix_decompose" />
       <config projectName="rrts" targetName="SDL2-static" />
-      <config projectName="rrts" targetName="test-core_force_explicit_ctor" />
       <config projectName="rrts" targetName="test-gtx_type_aligned" />
-      <config projectName="rrts" targetName="test-gtx_color_space_YCoCg" />
-      <config projectName="rrts" targetName="test-gtx_integer" />
+      <config projectName="rrts" targetName="test-ext_matrix_relational" />
+      <config projectName="rrts" targetName="test-gtx_closest_point" />
       <config projectName="rrts" targetName="test-ext_vector_relational" />
       <config projectName="rrts" targetName="rrts_main" />
       <config projectName="rrts" targetName="test-ext_scalar_ulp" />
-      <config projectName="rrts" targetName="glfwinfo" />
       <config projectName="rrts" targetName="test-gtc_constants" />
       <config projectName="rrts" targetName="heightmap" />
       <config projectName="rrts" targetName="inputlag" />
@@ -49,6 +46,7 @@
       <config projectName="rrts" targetName="tearing" />
       <config projectName="rrts" targetName="test-core_func_noise" />
       <config projectName="rrts" targetName="test-core_type_aligned" />
+      <config projectName="rrts" targetName="test-gtc_type_ptr" />
       <config projectName="rrts" targetName="test-gtc_bitfield" />
       <config projectName="rrts" targetName="test-core_type_cast" />
       <config projectName="rrts" targetName="test-core_func_common" />
@@ -62,23 +60,23 @@
       <config projectName="rrts" targetName="test-gtx_fast_trigonometry" />
       <config projectName="rrts" targetName="joysticks" />
       <config projectName="rrts" targetName="test-gtx_extend" />
-      <config projectName="rrts" targetName="test-core_setup_force_size_t_length" />
+      <config projectName="rrts" targetName="test-gtx_matrix_cross_product" />
       <config projectName="rrts" targetName="test-gtx" />
       <config projectName="rrts" targetName="test-ext_quaternion_trigonometric" />
       <config projectName="rrts" targetName="glm_static" />
       <config projectName="rrts" targetName="test-core_setup_platform_unknown" />
       <config projectName="rrts" targetName="test-perf_matrix_mul" />
       <config projectName="rrts" targetName="test-gtx_matrix_interpolation" />
-      <config projectName="rrts" targetName="test-gtx_scalar_relational" />
-      <config projectName="rrts" targetName="test-gtx_color_space" />
+      <config projectName="rrts" targetName="test-gtx_fast_square_root" />
+      <config projectName="rrts" targetName="splitview" />
+      <config projectName="rrts" targetName="test-gtx_perpendicular" />
       <config projectName="rrts" targetName="test-ext_scalar_constants" />
-      <config projectName="rrts" targetName="test-core_type_mat3x2" />
+      <config projectName="rrts" targetName="test-core_type_mat3x4" />
       <config projectName="rrts" targetName="test-gtx_type_trait" />
       <config projectName="rrts" targetName="test-core_type_int" />
-      <config projectName="rrts" targetName="test-core_type_mat4x4" />
+      <config projectName="rrts" targetName="test-ext_matrix_common" />
       <config projectName="rrts" targetName="test-core_func_packing" />
       <config projectName="rrts" targetName="test-gtc_matrix_inverse" />
-      <config projectName="rrts" targetName="test-gtx_wrap" />
       <config projectName="rrts" targetName="test-gtc_vec1" />
       <config projectName="rrts" targetName="test-ext_scalar_uint_sized" />
       <config projectName="rrts" targetName="backend_test" />
@@ -87,7 +85,8 @@
       <config projectName="rrts" targetName="test-core_force_ctor_init" />
       <config projectName="rrts" targetName="test-core_force_pure" />
       <config projectName="rrts" targetName="iconify" />
-      <config projectName="rrts" targetName="test-perf_matrix_inverse" />
+      <config projectName="rrts" targetName="test-gtx_texture" />
+      <config projectName="rrts" targetName="offscreen" />
       <config projectName="rrts" targetName="test-gtc_matrix_access" />
       <config projectName="rrts" targetName="test-gtx_functions" />
       <config projectName="rrts" targetName="test-gtx_intersect" />
@@ -97,105 +96,106 @@
       <config projectName="rrts" targetName="uninstall" />
       <config projectName="rrts" targetName="test-core_type_ctor" />
       <config projectName="rrts" targetName="test-core_type_length" />
-      <config projectName="rrts" targetName="test-gtx_scalar_multiplication" />
+      <config projectName="rrts" targetName="test-perf_matrix_inverse" />
       <config projectName="rrts" targetName="test-gtx_orthonormalize" />
-      <config projectName="rrts" targetName="test-gtx_matrix_query" />
       <config projectName="rrts" targetName="gamma" />
-      <config projectName="rrts" targetName="test-ext_vector_ulp" />
       <config projectName="rrts" targetName="test-gtc_color_space" />
-      <config projectName="rrts" targetName="test-core_cpp_defaulted_ctor" />
+      <config projectName="rrts" targetName="test-gtx_dual_quaternion" />
       <config projectName="rrts" targetName="sharing" />
-      <config projectName="rrts" targetName="test-gtc_round" />
       <config projectName="rrts" targetName="test-gtc_quaternion" />
       <config projectName="rrts" targetName="test-gtx_matrix_operation" />
-      <config projectName="rrts" targetName="test-ext_quaternion_geometric" />
       <config projectName="rrts" targetName="test-ext_quaternion_exponential" />
       <config projectName="rrts" targetName="test-gtx_matrix_factorisation" />
-      <config projectName="rrts" targetName="test-gtx_exterior_product" />
+      <config projectName="rrts" targetName="gmock" />
+      <config projectName="rrts" targetName="test-gtc_round" />
       <config projectName="rrts" targetName="test-gtx_optimum_pow" />
-      <config projectName="rrts" targetName="test-gtx_range" />
+      <config projectName="rrts" targetName="test-gtx_integer" />
       <config projectName="rrts" targetName="test-core_force_aligned_gentypes" />
       <config projectName="rrts" targetName="test-core_setup_force_cxx98" />
       <config projectName="rrts" targetName="test-perf_matrix_div" />
       <config projectName="rrts" targetName="SDL2main" />
       <config projectName="rrts" targetName="test-gtx_gradient_paint" />
+      <config projectName="rrts" targetName="test-gtx_range" />
       <config projectName="rrts" targetName="test-gtx_component_wise" />
       <config projectName="rrts" targetName="test-core_type_mat2x4" />
       <config projectName="rrts" targetName="test-core_type_mat2x3" />
       <config projectName="rrts" targetName="test-core_type_mat2x2" />
-      <config projectName="rrts" targetName="test-gtx_matrix_cross_product" />
-      <config projectName="rrts" targetName="test-gtx_texture" />
+      <config projectName="rrts" targetName="test-gtx_scalar_multiplication" />
       <config projectName="rrts" targetName="rrts_test" />
-      <config projectName="rrts" targetName="test-gtx_color_encoding" />
+      <config projectName="rrts" targetName="test-gtx_scalar_relational" />
       <config projectName="rrts" targetName="glfw" />
       <config projectName="rrts" targetName="gtest_main" />
       <config projectName="rrts" targetName="test-gtx_log_base" />
-      <config projectName="rrts" targetName="test-ext_scalar_relational" />
+      <config projectName="rrts" targetName="test-core_func_exponential" />
       <config projectName="rrts" targetName="test-gtx_common" />
       <config projectName="rrts" targetName="test-gtc_type_precision" />
       <config projectName="rrts" targetName="test-ext_quaternion_transform" />
       <config projectName="rrts" targetName="test-core_func_matrix" />
+      <config projectName="rrts" targetName="test-gtx_fast_exponential" />
+      <config projectName="rrts" targetName="test-gtx_exterior_product" />
       <config projectName="rrts" targetName="reopen" />
-      <config projectName="rrts" targetName="test-gtx_matrix_transform_2d" />
+      <config projectName="rrts" targetName="test-ext_vector_ulp" />
       <config projectName="rrts" targetName="test-gtx_polar_coordinates" />
       <config projectName="rrts" targetName="test-gtc_ulp" />
-      <config projectName="rrts" targetName="test-gtx_perpendicular" />
+      <config projectName="rrts" targetName="test-gtx_wrap" />
       <config projectName="rrts" targetName="test-core_type_mat3x3" />
-      <config projectName="rrts" targetName="test-ext_vector_common" />
+      <config projectName="rrts" targetName="test-core_type_mat3x2" />
       <config projectName="rrts" targetName="test-core_func_integer" />
       <config projectName="rrts" targetName="test-gtx_vec_swizzle" />
       <config projectName="rrts" targetName="test-core_func_vector_relational" />
-      <config projectName="rrts" targetName="test-gtx_easing" />
+      <config projectName="rrts" targetName="opacity" />
+      <config projectName="rrts" targetName="test-gtx_string_cast" />
       <config projectName="rrts" targetName="test-gtx_handed_coordinate_space" />
       <config projectName="rrts" targetName="test-core_force_unrestricted_gentype" />
-      <config projectName="rrts" targetName="test-ext_matrix_relational" />
+      <config projectName="rrts" targetName="test-ext_quaternion_geometric" />
       <config projectName="rrts" targetName="monitors" />
       <config projectName="rrts" targetName="test-gtc_reciprocal" />
       <config projectName="rrts" targetName="test-gtx_spline" />
       <config projectName="rrts" targetName="test-core_func_swizzle" />
       <config projectName="rrts" targetName="test-gtx_projection" />
-      <config projectName="rrts" targetName="test-ext_scalar_common" />
+      <config projectName="rrts" targetName="test-gtx_color_space_YCoCg" />
       <config projectName="rrts" targetName="docs" />
       <config projectName="rrts" targetName="test-ext_quaternion_type" />
       <config projectName="rrts" targetName="simple" />
-      <config projectName="rrts" targetName="empty" />
+      <config projectName="rrts" targetName="test-gtx_color_space" />
       <config projectName="rrts" targetName="test-core_func_integer_find_lsb" />
-      <config projectName="rrts" targetName="test-bug_ms_vec_static" />
+      <config projectName="rrts" targetName="test-core_type_mat4x4" />
       <config projectName="rrts" targetName="test-core_type_mat4x3" />
       <config projectName="rrts" targetName="test-core_type_mat4x2" />
-      <config projectName="rrts" targetName="test-gtx_vector_query" />
-      <config projectName="rrts" targetName="test-gtc_matrix_integer" />
-      <config projectName="rrts" targetName="test-ext_matrix_common" />
-      <config projectName="rrts" targetName="test-core_type_mat3x4" />
+      <config projectName="rrts" targetName="test-core_force_xyzw_only" />
+      <config projectName="rrts" targetName="test-ext_vector_bool1" />
       <config projectName="rrts" targetName="gears" />
       <config projectName="rrts" targetName="test-gtc_type_aligned" />
-      <config projectName="rrts" targetName="test-gtx_fast_exponential" />
+      <config projectName="rrts" targetName="test-gtc_matrix_integer" />
       <config projectName="rrts" targetName="msaa" />
-      <config projectName="rrts" targetName="test-gtx_fast_square_root" />
+      <config projectName="rrts" targetName="glfwinfo" />
       <config projectName="rrts" targetName="test-gtx_euler_angle" />
-      <config projectName="rrts" targetName="test-gtx_matrix_decompose" />
+      <config projectName="rrts" targetName="test-core_func_trigonometric" />
       <config projectName="rrts" targetName="test-gtx_norm" />
       <config projectName="rrts" targetName="test-ext_vector_integer" />
-      <config projectName="rrts" targetName="test-perf_matrix_mul_vector" />
+      <config projectName="rrts" targetName="test-ext_vector_common" />
+      <config projectName="rrts" targetName="test-gtx_easing" />
       <config projectName="rrts" targetName="events" />
-      <config projectName="rrts" targetName="offscreen" />
+      <config projectName="rrts" targetName="test-core_force_explicit_ctor" />
       <config projectName="rrts" targetName="boing" />
       <config projectName="rrts" targetName="test-gtc_random" />
       <config projectName="rrts" targetName="test-gtc_packing" />
       <config projectName="rrts" targetName="test-core_func_integer_find_msb" />
-      <config projectName="rrts" targetName="splitview" />
-      <config projectName="rrts" targetName="gmock" />
+      <config projectName="rrts" targetName="test-gtx_color_encoding" />
+      <config projectName="rrts" targetName="test-gtx_matrix_query" />
+      <config projectName="rrts" targetName="test-bug_ms_vec_static" />
+      <config projectName="rrts" targetName="empty" />
       <config projectName="rrts" targetName="test-ext_quaternion_relational" />
       <config projectName="rrts" targetName="test-gtx_associated_min_max" />
       <config projectName="rrts" targetName="test-gtx_rotate_normalized_axis" />
       <config projectName="rrts" targetName="icon" />
-      <config projectName="rrts" targetName="test-gtx_closest_point" />
-      <config projectName="rrts" targetName="test-core_func_exponential" />
+      <config projectName="rrts" targetName="test-ext_scalar_common" />
+      <config projectName="rrts" targetName="test-core_setup_force_size_t_length" />
       <config projectName="rrts" targetName="test-core_func_integer_bit_count" />
-      <config projectName="rrts" targetName="test-gtc_type_ptr" />
+      <config projectName="rrts" targetName="test-ext_scalar_relational" />
       <config projectName="rrts" targetName="test-core_cpp_constexpr" />
       <config projectName="rrts" targetName="test-gtc_epsilon" />
-      <config projectName="rrts" targetName="test-gtx_string_cast" />
+      <config projectName="rrts" targetName="test-gtx_vector_query" />
       <config projectName="rrts" targetName="test-gtx_rotate_vector" />
     </generated>
   </component>
@@ -209,19 +209,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e564437a-1b6b-40bc-80be-1e0a0fe96d99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project/backend/include/VertexBufferArray.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/backend/source/VertexBufferArray.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/backend/include/IndexBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/include/IndexBuffer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/backend/include/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/include/Shader.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/backend/include/Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/include/Texture.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/backend/include/Vertex.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/include/Vertex.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/backend/include/VertexBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/include/VertexBuffer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/backend/include/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/include/Window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/backend/source/IndexBuffer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/source/IndexBuffer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/backend/source/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/source/Shader.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/backend/source/VertexBuffer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/source/VertexBuffer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/backend/source/Window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/source/Window.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/backend/include/VertexBufferArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/project/backend/include/VertexBufferArray.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/main/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project/main/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -254,7 +246,7 @@
     <expand />
     <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Emscripten Debug" />
   <component name="FavoritesManager">
     <favorites_list name="Git">
       <favorite_root url="file://$PROJECT_DIR$/.gitignore" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
@@ -262,11 +254,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/main/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+            <state relative-caret-position="435">
+              <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -274,26 +266,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/backend/include/Shader.h">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project/backend/include/Texture.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-              <folding>
-                <element signature="e#45#64#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/backend/source/Shader.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -356,25 +333,25 @@
         <option value="$PROJECT_DIR$/build/debug/web/calendar.html" />
         <option value="$PROJECT_DIR$/project/backend/source/Texture.cpp" />
         <option value="$PROJECT_DIR$/Doxyfile" />
-        <option value="$PROJECT_DIR$/project/backend/include/Texture.h" />
         <option value="$PROJECT_DIR$/project/backend/include/Vertex.h" />
         <option value="$PROJECT_DIR$/project/backend/include/Window.h" />
-        <option value="$PROJECT_DIR$/project/backend/include/VertexBuffer.h" />
         <option value="$PROJECT_DIR$/project/backend/source/VertexBuffer.cpp" />
         <option value="$PROJECT_DIR$/project/backend/include/IndexBuffer.h" />
         <option value="$PROJECT_DIR$/project/backend/source/IndexBuffer.cpp" />
         <option value="$PROJECT_DIR$/project/backend/source/VertexBufferArray.cpp" />
-        <option value="$PROJECT_DIR$/project/backend/include/VertexBufferArray.h" />
-        <option value="$PROJECT_DIR$/project/backend/include/Shader.h" />
         <option value="$PROJECT_DIR$/project/backend/source/Shader.cpp" />
         <option value="$PROJECT_DIR$/project/backend/source/Window.cpp" />
+        <option value="$PROJECT_DIR$/project/backend/include/Shader.h" />
+        <option value="$PROJECT_DIR$/project/backend/include/VertexBuffer.h" />
+        <option value="$PROJECT_DIR$/project/backend/include/VertexBufferArray.h" />
         <option value="$PROJECT_DIR$/project/main/main.cpp" />
+        <option value="$PROJECT_DIR$/project/backend/include/Texture.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2250" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="330" />
     <option name="y" value="122" />
     <option name="width" value="1113" />
     <option name="height" value="917" />
@@ -396,6 +373,19 @@
               <item name="rrts" type="b2602c69:ProjectViewProjectNode" />
               <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rrts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rrts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rrts-game" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="debug" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rrts" type="b2602c69:ProjectViewProjectNode" />
@@ -604,7 +594,8 @@
       <workItem from="1553499207031" duration="3053000" />
       <workItem from="1553577201214" duration="39000" />
       <workItem from="1553577260613" duration="3203000" />
-      <workItem from="1553604191621" duration="1431000" />
+      <workItem from="1553604191621" duration="2758000" />
+      <workItem from="1553620652171" duration="464000" />
     </task>
     <task id="LOCAL-00001" summary="Added README and added web shell for future improvement">
       <created>1552248314956</created>
@@ -649,7 +640,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106463000" />
+    <option name="totallyTimeSpent" value="108254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -661,25 +652,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2250" y="122" width="1113" height="917" extended-state="0" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.33458295" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18352681" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28987342" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19795918" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3969795" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291536" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946696" weight="0.36245954" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946696" weight="0.36202532" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.30075186" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3291536" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.22341569" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.26327685" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.26645768" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3296582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -902,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/backend/include/Texture.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/backend/include/Vertex.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -923,13 +907,6 @@
           <folding>
             <element signature="e#45#65#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/backend/include/VertexBuffer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -960,10 +937,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project/backend/source/Window.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#103#126#0" expanded="true" />
+            <element signature="e#745#812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/backend/include/Shader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#45#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/backend/include/VertexBuffer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project/backend/include/VertexBufferArray.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="345">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/backend/source/Shader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -977,45 +993,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/backend/include/Shader.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-          <folding>
-            <element signature="e#45#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/backend/source/Shader.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/backend/source/Window.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#103#126#0" expanded="true" />
-            <element signature="e#745#812#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/main/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+        <state relative-caret-position="435">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/backend/include/Texture.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
         </state>
       </provider>
     </entry>

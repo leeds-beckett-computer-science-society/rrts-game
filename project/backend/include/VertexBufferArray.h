@@ -20,8 +20,18 @@ namespace rrts
 	    void bind();
 	    static void unbind();
 
+	    /**
+	     * Initializes the vertex buffer srray
+	     */
 	    void create();
 
+	    /**
+	     * Adds a attribute to the vertex array. this requires shaders made to handle the data
+	     * @param type
+	     * @param width
+	     * @param offset
+	     * @param vectorSize
+	     */
 	    void AddAttribute(AttribDataType type, unsigned int width, void* offset, unsigned int vectorSize);
 
 	private:

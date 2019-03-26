@@ -15,12 +15,23 @@ namespace rrts
 
 	    ~Shader();
 
+	    /**
+	     * Loads the shaders from the file. the geometry shader is optional my default but the others are required
+	     * @param vertex
+	     * @param fragment
+	     * @param geometry
+	     */
 	    void loadFromFile(std::string vertex, std::string fragment, std::string geometry = "");
 
 	    void bind();
 
 	    static void unbind();
 
+	    /**
+	     * Adds a Vec3 uniform to the shader
+	     * @param vec3
+	     * @param name
+	     */
 	    void addUniformVec3(glm::vec3 vec3, std::string name);
 	private:
 	    unsigned int vertexid;

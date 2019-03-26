@@ -13,18 +13,15 @@
 #endif
 
 rrts::Graphics::Vertex vertices[] = {
-	glm::vec3(-0.5f, 0.5f, 0.f), glm::vec3(1.0f, 0.0f, 0.f),  glm::vec2(0.0f, 1.f),
-	glm::vec3(-0.5f, -0.5f, 0.f), glm::vec3(0.0f, 1.0f, 0.f),glm::vec2(0.0f, 0.f),
+	glm::vec3(-0.5f, 0.5f, 0.f), glm::vec3(1.0f, 0.0f, 0.f), glm::vec2(0.0f, 1.f),
+	glm::vec3(-0.5f, -0.5f, 0.f),glm::vec3(0.0f, 1.0f, 0.f), glm::vec2(0.0f, 0.f),
 	glm::vec3(0.5f, -0.5f, 0.f), glm::vec3(0.0f, 0.0f, 1.f), glm::vec2(1.0f, 0.f),
-	glm::vec3(0.5f, 0.5f, 0.f), glm::vec3(0.0f, 0.0f, 1.f), glm::vec2(1.0f, 0.f),
+	glm::vec3(0.5f, 0.5f, 0.f),  glm::vec3(0.0f, 0.0f, 1.f), glm::vec2(1.0f, 0.f),
 };
-unsigned int vert_size = sizeof(vertices) / sizeof(rrts::Graphics::Vertex);
 unsigned int indices[] = {
 	0, 1, 2,
 	0, 2, 3
 };
-
-unsigned int in_size = sizeof(indices) / sizeof(unsigned int);
 
 int main(int argc, char *argv[])
 {
@@ -45,12 +42,10 @@ int main(int argc, char *argv[])
 		(void*)offsetof(rrts::Graphics::Vertex, position), 3);
 
 	vertexBufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
-	                               (void*)offsetof(rrts::Graphics::Vertex, colour), 3);
+		(void*)offsetof(rrts::Graphics::Vertex, colour), 3);
 
 	vertexBufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
-	                               (void*)offsetof(rrts::Graphics::Vertex, texcoord), 2);
-
-
+		(void*)offsetof(rrts::Graphics::Vertex, texcoord), 2);
 
 	window.WhileRunning([&](){
 		window.pollEvents();

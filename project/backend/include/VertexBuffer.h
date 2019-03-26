@@ -16,6 +16,12 @@ namespace rrts
 	{
 	public:
 	    ~VertexBuffer();
+
+	    /**
+	     * Creates the vertex buffer using the vertices and the size of the array
+	     * @param vertices
+	     * @param size
+	     */
 	    void create(void *vertices, unsigned int size);
 	private:
 	    void bind() const;
