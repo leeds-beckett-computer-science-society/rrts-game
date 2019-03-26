@@ -3,27 +3,32 @@
 
 #include <Vertex.h>
 
-namespace rrts::Graphics
+namespace rrts
 {
-    enum DrawType
+    namespace Graphics
     {
-        Static, Dynamic, Stream
-    };
+	enum DrawType
+	{
+	    Static, Dynamic, Stream
+	};
 
-    class VertexBuffer
-    {
-    public:
+	class VertexBuffer
+	{
+	public:
+	    ~VertexBuffer();
+	    void create(void *vertices, unsigned int size);
+	private:
+	    void bind() const;
 
-    private:
-        void bind() const;
-        void unbind() const;
+	    void unbind() const;
 
-        void create(void * vertices);
-    private:
-        unsigned int bufferID;
-        int size;
-        DrawType type;
-    };
+
+	private:
+	    unsigned int bufferID;
+	    int size;
+	    DrawType type;
+	};
+    }
 }
 
 #endif //RRTS_VERTEXBUFFER_H

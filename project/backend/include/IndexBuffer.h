@@ -1,20 +1,27 @@
 #ifndef RRTS_INDEXBUFFER_H
 #define RRTS_INDEXBUFFER_H
 
-
-class IndexBuffer
+namespace rrts
 {
-    public:
+    namespace Graphics
+    {
+	class IndexBuffer
+	{
+	public:
+	    ~IndexBuffer();
+	    void create(void *indices, unsigned int size);
 
-    private:
-	void bind() const;
-	void unbind() const;
+	    unsigned int getCount();
+	private:
+	    void bind() const;
 
-	void create(void * indices, unsigned int count);
-    private:
-	unsigned int bufferID;
-	int size;
-};
+	    static void unbind();
 
+	private:
+	    unsigned int bufferID;
+	    unsigned int count;
+	};
+    }
+}
 
 #endif //RRTS_INDEXBUFFER_H

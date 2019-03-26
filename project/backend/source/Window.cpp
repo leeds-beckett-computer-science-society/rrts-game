@@ -26,6 +26,7 @@ rrts::Graphics::Window::~Window()
 void rrts::Graphics::Window::swapBuffer()
 {
 	glfwSwapBuffers(window);
+	glFlush();
 }
 
 void rrts::Graphics::Window::pollEvents()

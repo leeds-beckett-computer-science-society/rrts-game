@@ -14,7 +14,7 @@ rrts::Graphics::Shader::~Shader()
 
 void rrts::Graphics::Shader::loadFromFile(std::string vertex, std::string fragment, std::string geometry)
 {
-	if (programID)
+	if (programID > -1)
 		glDeleteProgram(programID);
 
 	programID = glCreateProgram();
@@ -29,12 +29,12 @@ void rrts::Graphics::Shader::loadFromFile(std::string vertex, std::string fragme
 		compileShader(LoadFile(std::move(fragment)), fragmentid, GL_FRAGMENT_SHADER);
 		glAttachShader(programID, fragmentid);
 	}
-//	if (!geometry.empty())
-//	{
-//		geometryid = glCreateShader(GL_GEOMETRY_SHADER);
-//		compileShader(LoadFile(std::move(geometry)), geometryid, GL_GEOMETRY_SHADER);
-//		glAttachShader(programID, geometryid);
-//	}
+	if (!geometry.empty())
+	{
+		geometryid = glCreateShader(GL_GEOMETRY_SHADER);
+		compileShader(LoadFile(std::move(geometry)), geometryid, GL_GEOMETRY_SHADER);
+		glAttachShader(programID, geometryid);
+	}
 	glLinkProgram(programID);
 
 	std::string error;
@@ -47,7 +47,7 @@ void rrts::Graphics::Shader::loadFromFile(std::string vertex, std::string fragme
 		error += info;
 	}
 	std::cout << error << "\n";
-	glUseProgram(0);
+	unbind();
 	glDeleteShader(vertexid);
 	glDeleteShader(fragmentid);
 }
@@ -111,4 +111,18 @@ void rrts::Graphics::Shader::compileShader(std::string source, unsigned int id, 
 void rrts::Graphics::Shader::bind()
 {
 	glUseProgram(programID);
+}
+
+void rrts::Graphics::Shader::unbind()
+{
+	glUseProgram(0);
+}
+
+void rrts::Graphics::Shader::addUniformVec3(glm::vec3 vec3, std::string name)
+{
+	int location = glGetUniformLocation(programID, name.c_str());
+
+	bind();
+	if (location > -1)
+		glUniform3f(location, vec3.x, vec3.y, vec3.z);
 }

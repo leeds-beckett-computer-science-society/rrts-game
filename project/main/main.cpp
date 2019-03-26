@@ -4,6 +4,10 @@
 #include <Vertex.h>
 #include <vec3.hpp>
 #include <GL/glew.h>
+#include <VertexBuffer.h>
+#include <IndexBuffer.h>
+#include <VertexBufferArray.h>
+
 #ifdef EMSCRIPTEN
 #include <emscripten.h>
 #endif
@@ -24,51 +28,39 @@ unsigned int in_size = sizeof(indices) / sizeof(unsigned int);
 
 int main(int argc, char *argv[])
 {
-	float r = 0.0f, g = 0.0f, b = 0.0f;
 	rrts::Graphics::Window window(1280, 720);
 
 	rrts::Graphics::Shader shader;
-	shader.loadFromFile("shaders/vertex.glsl", "shaders/fragment.glsl", "");
+	shader.loadFromFile("shaders/vertex.glsl", "shaders/fragment.glsl");
 
-	unsigned int vao;
-	glGenVertexArrays(1, &vao);
-	glBindVertexArray(vao);
+	rrts::Graphics::VertexBufferArray vertexBufferArray;
 
-	unsigned int vbo;
-	glGenBuffers(1, &vbo);
-	glBindBuffer(GL_ARRAY_BUFFER, vbo);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+	rrts::Graphics::VertexBuffer vertexBuffer{};
+	vertexBuffer.create(&vertices, sizeof(vertices));
 
-	unsigned int ebo;
-	glGenBuffers(1, &ebo);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+	rrts::Graphics::IndexBuffer indexBuffer{};
+	indexBuffer.create(indices, sizeof(indices));
 
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE,
-		sizeof(rrts::Graphics::Vertex), (void*)offsetof(rrts::Graphics::Vertex, position));
-	glEnableVertexAttribArray(0);
+	vertexBufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
+		(void*)offsetof(rrts::Graphics::Vertex, position), 3);
 
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE,
-	                      sizeof(rrts::Graphics::Vertex), (void*)offsetof(rrts::Graphics::Vertex, colour));
-	glEnableVertexAttribArray(1);
+	vertexBufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
+	                               (void*)offsetof(rrts::Graphics::Vertex, colour), 3);
 
-	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE,
-	                      sizeof(rrts::Graphics::Vertex), (void*)offsetof(rrts::Graphics::Vertex, texcoord));
-	glEnableVertexAttribArray(2);
+	vertexBufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
+	                               (void*)offsetof(rrts::Graphics::Vertex, texcoord), 2);
 
-	glBindVertexArray(0);
+
 
 	window.WhileRunning([&](){
 		window.pollEvents();
-
 		window.clear();
 
 		shader.bind();
-		glBindVertexArray(vao);
-		glDrawElements(GL_TRIANGLES, in_size, GL_UNSIGNED_INT, 0);
+		vertexBufferArray.bind();
+		glDrawElements(GL_TRIANGLES, indexBuffer.getCount(), GL_UNSIGNED_INT, 0);
 
 		window.swapBuffer();
-		glFlush();
 	});
 
 	return 0;

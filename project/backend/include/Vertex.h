@@ -3,15 +3,18 @@
 
 #include <glm.hpp>
 
-namespace rrts::Graphics
+namespace rrts
 {
-    class Vertex
+    namespace Graphics
     {
-    public:
-        glm::vec3 position;
-        glm::vec3 colour;
-        glm::vec2 texcoord;
-    };
+        class Vertex
+        {
+        public:
+            glm::vec3 position;
+            glm::vec3 colour;
+            glm::vec2 texcoord;
+        };
+    }
 }
 
 #endif //RRTS_VERTEX_H
