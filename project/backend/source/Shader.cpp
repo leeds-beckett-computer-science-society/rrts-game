@@ -1,5 +1,4 @@
 #include <utility>
-
 #include <Shader.h>
 #include <GL/glew.h>
 #include <string>
@@ -15,7 +14,7 @@ rrts::Graphics::Shader::~Shader()
 
 void rrts::Graphics::Shader::loadFromFile(std::string vertex, std::string fragment, std::string geometry)
 {
-	if (programID)
+	if (programID > -1)
 		glDeleteProgram(programID);
 
 	programID = glCreateProgram();
@@ -24,20 +23,18 @@ void rrts::Graphics::Shader::loadFromFile(std::string vertex, std::string fragme
 		vertexid = glCreateShader(GL_VERTEX_SHADER);
 		compileShader(LoadFile(std::move(vertex)), vertexid, GL_VERTEX_SHADER);
 		glAttachShader(programID, vertexid);
-		glDeleteShader(vertexid);
 	}
 	if (!fragment.empty()) {
 		fragmentid = glCreateShader(GL_FRAGMENT_SHADER);
 		compileShader(LoadFile(std::move(fragment)), fragmentid, GL_FRAGMENT_SHADER);
 		glAttachShader(programID, fragmentid);
-		glDeleteShader(fragmentid);
 	}
-//	if (!geometry.empty())
-//	{
-//		geometryid = glCreateShader(GL_GEOMETRY_SHADER);
-//		compileShader(LoadFile(std::move(geometry)), geometryid, GL_GEOMETRY_SHADER);
-//		glAttachShader(programID, geometryid);
-//	}
+	if (!geometry.empty())
+	{
+		geometryid = glCreateShader(GL_GEOMETRY_SHADER);
+		compileShader(LoadFile(std::move(geometry)), geometryid, GL_GEOMETRY_SHADER);
+		glAttachShader(programID, geometryid);
+	}
 	glLinkProgram(programID);
 
 	std::string error;
@@ -50,7 +47,9 @@ void rrts::Graphics::Shader::loadFromFile(std::string vertex, std::string fragme
 		error += info;
 	}
 	std::cout << error << "\n";
-	glUseProgram(0);
+	unbind();
+	glDeleteShader(vertexid);
+	glDeleteShader(fragmentid);
 }
 
 std::string rrts::Graphics::Shader::LoadFile(std::string path)
@@ -84,7 +83,7 @@ std::string rrts::Graphics::Shader::LoadFile(std::string path)
 		stream.close();
 	}
 #endif
-	return std::move(str);
+	return str;
 }
 
 std::string rrts::Graphics::Shader::errorCheck(unsigned int shader, unsigned int errortype, std::string message)
@@ -106,10 +105,24 @@ void rrts::Graphics::Shader::compileShader(std::string source, unsigned int id, 
 	const char *c_src = source.c_str();
 	glShaderSource(id, 1, &c_src, nullptr);
 	glCompileShader(id);
-	std::cout << errorCheck(id, GL_COMPILE_STATUS, "== SHADER ERROR ==");
+	std::cout << errorCheck(id, GL_COMPILE_STATUS, "== SHADER INFO ==");
 }
 
 void rrts::Graphics::Shader::bind()
 {
+	glUseProgram(programID);
+}
 
+void rrts::Graphics::Shader::unbind()
+{
+	glUseProgram(0);
+}
+
+void rrts::Graphics::Shader::addUniformVec3(glm::vec3 vec3, std::string name)
+{
+	int location = glGetUniformLocation(programID, name.c_str());
+
+	bind();
+	if (location > -1)
+		glUniform3f(location, vec3.x, vec3.y, vec3.z);
 }

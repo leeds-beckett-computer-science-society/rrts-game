@@ -1,31 +1,59 @@
 #include <iostream>
 #include <Window.h>
 #include <Shader.h>
+#include <Vertex.h>
+#include <vec3.hpp>
+#include <GL/glew.h>
+#include <VertexBuffer.h>
+#include <IndexBuffer.h>
+#include <VertexBufferArray.h>
+
+#ifdef EMSCRIPTEN
+#include <emscripten.h>
+#endif
+
+rrts::Graphics::Vertex vertices[] = {
+	glm::vec3(-0.5f, 0.5f, 0.f), glm::vec3(1.0f, 0.0f, 0.f), glm::vec2(0.0f, 1.f),
+	glm::vec3(-0.5f, -0.5f, 0.f),glm::vec3(0.0f, 1.0f, 0.f), glm::vec2(0.0f, 0.f),
+	glm::vec3(0.5f, -0.5f, 0.f), glm::vec3(0.0f, 0.0f, 1.f), glm::vec2(1.0f, 0.f),
+	glm::vec3(0.5f, 0.5f, 0.f),  glm::vec3(0.0f, 0.0f, 1.f), glm::vec2(1.0f, 0.f),
+};
+unsigned int indices[] = {
+	0, 1, 2,
+	0, 2, 3
+};
 
 int main(int argc, char *argv[])
 {
-	float r = 0.0f, g = 0.0f, b = 0.0f;
 	rrts::Graphics::Window window(1280, 720);
 
 	rrts::Graphics::Shader shader;
-	shader.loadFromFile("shaders/fragment.glsl", "shaders/vertex.glsl", "");
+	shader.loadFromFile("shaders/vertex.glsl", "shaders/fragment.glsl");
+
+	rrts::Graphics::VertexBufferArray vertexBufferArray;
+
+	rrts::Graphics::VertexBuffer vertexBuffer{};
+	vertexBuffer.create(&vertices, sizeof(vertices));
+
+	rrts::Graphics::IndexBuffer indexBuffer{};
+	indexBuffer.create(indices, sizeof(indices));
+
+	vertexBufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
+		(void*)offsetof(rrts::Graphics::Vertex, position), 3);
+
+	vertexBufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
+		(void*)offsetof(rrts::Graphics::Vertex, colour), 3);
+
+	vertexBufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
+		(void*)offsetof(rrts::Graphics::Vertex, texcoord), 2);
 
 	window.WhileRunning([&](){
 		window.pollEvents();
-		if (r >= 1.0f)
-			r = 0.1f;
+		window.clear();
 
-		if (g >= 1.0f)
-			g = 0.1f;
-
-		if (b >= 1.0f)
-			b = 0.1f;
-
-		r += 0.001f;
-		g += 0.005f;
-		b += 0.003f;
-
-		window.clear(r, g, b, 1.f);
+		shader.bind();
+		vertexBufferArray.bind();
+		glDrawElements(GL_TRIANGLES, indexBuffer.getCount(), GL_UNSIGNED_INT, 0);
 
 		window.swapBuffer();
 	});

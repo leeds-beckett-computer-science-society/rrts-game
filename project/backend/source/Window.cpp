@@ -1,7 +1,7 @@
 #include <Window.h>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-
+#include <iostream>
 #ifdef EMSCRIPTEN
 #include <emscripten.h>
 #endif
@@ -26,6 +26,7 @@ rrts::Graphics::Window::~Window()
 void rrts::Graphics::Window::swapBuffer()
 {
 	glfwSwapBuffers(window);
+	glFlush();
 }
 
 void rrts::Graphics::Window::pollEvents()
@@ -45,15 +46,27 @@ void rrts::Graphics::Window::WhileRunning(std::function<void()> callback)
 	}
 #endif
 }
+#ifndef EMSCRIPTEN
+void GLAPIENTRY MessageCallback( GLenum source,
+	GLenum type, GLuint id, GLenum severity,
+	GLsizei length, const GLchar* message, const void* userParam )
+{
+	fprintf( stderr, "GL CALLBACK: %s type = 0x%x, severity = 0x%x, message = %s\n",
+	( type == GL_DEBUG_TYPE_ERROR ? "** GL ERROR **" : "" ),
+	type, severity, message );
+}
+#endif
 
 void rrts::Graphics::Window::createWindow(int width, int height)
 {
 	if (!glfwInit()) {
-		// Initialization failed
+		std::cout << "GLFW failed to initialize \n";
 	}
 
+	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+	glfwWindowHint(GLFW_CLIENT_API, GLFW_OPENGL_ES_API);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
 
 	window = glfwCreateWindow(width, height, "Window", nullptr, nullptr);
 	if (!window) {
@@ -61,7 +74,15 @@ void rrts::Graphics::Window::createWindow(int width, int height)
 	}
 	glfwMakeContextCurrent(window);
 	glewExperimental = GL_TRUE;
-	glewInit();
+	GLenum err=glewInit();
+	if(err!=GLEW_OK) {
+		std::cout << "glewInit failed: " << glewGetErrorString(err) << std::endl;
+		exit(1);
+	}
+#ifndef EMSCRIPTEN
+	glEnable              ( GL_DEBUG_OUTPUT );
+	glDebugMessageCallback( MessageCallback, 0 );
+#endif
 }
 
 void rrts::Graphics::Window::runFrame()

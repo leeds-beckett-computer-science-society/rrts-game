@@ -26,6 +26,7 @@ endif()
 
 include_directories(project/main/include)
 include_directories(project/backend/include)
+include_directories(lib/glm/glm)
 
 add_executable(${PROJECT_NAME}_main project/main/main.cpp ${SRCS} ${HDRS} ${BACK_SRCS} ${BACK_HDRS})
 
@@ -37,7 +38,6 @@ if(NOT EMSCRIPTEN)
     include_directories(lib/googletest/googletest/include)
     include_directories(lib/googletest/googlemock/include)
     include_directories(lib/glfw/include)
-    include_directories(lib/glm/glm)
 
     link_directories(lib/googletest)
     link_directories(lib/glfw)
