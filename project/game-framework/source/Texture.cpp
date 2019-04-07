@@ -41,7 +41,7 @@ void rrts::Graphics::Texture::loadFromFile(std::string path)
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 	int width, height, nrChannels;
-	unsigned char *data = stbi_load("test.png", &width, &height, &nrChannels, STBI_rgb);
+	unsigned char *data = stbi_load(path.c_str(), &width, &height, &nrChannels, STBI_rgb);
 	if (data)
 	{
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);

@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	rrts::Graphics::Square square;
 	rrts::Graphics::Texture texture;
 
-	texture.loadFromFile("text.png");
+	texture.loadFromFile("csc-logo.png");
 
 	square.setTexture(&texture);
 
