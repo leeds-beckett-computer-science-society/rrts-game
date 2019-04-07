@@ -1,9 +1,27 @@
+/*
+Copyright (C) 2019 Leeds Beckett Computer Science Society
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*/
 #include <utility>
 #include <Shader.h>
 #include <GL/glew.h>
 #include <string>
 #include <fstream>
 #include <streambuf>
+#include <ext.hpp>
 
 rrts::Graphics::Shader::Shader() = default;
 
@@ -118,16 +136,48 @@ void rrts::Graphics::Shader::unbind()
 	glUseProgram(0);
 }
 
-void rrts::Graphics::Shader::addUniformVec3(glm::vec3 vec3, std::string name)
+void rrts::Graphics::Shader::addUniformVec3(glm::vec3 vec3, const std::string& name)
 {
-	int location = glGetUniformLocation(programID, name.c_str());
-
+	int location = getUniformLocation(name);
 	bind();
 	if (location > -1)
-		glUniform3f(location, vec3.x, vec3.y, vec3.z);
+		//glUniform3f(location, 1, GL_FALSE, glm::value_ptr(vec3));
+	unbind();
 }
 
 unsigned int rrts::Graphics::Shader::getId()
 {
 	return programID;
+}
+
+void rrts::Graphics::Shader::addUniformMat4(glm::mat4 mat4, const std::string& name)
+{
+	int location = getUniformLocation(name);
+	bind();
+	if (location > -1)
+		glUniformMatrix4fv(location, 1, GL_FALSE, glm::value_ptr(mat4));
+	unbind();
+}
+
+int rrts::Graphics::Shader::getUniformLocation(const std::string& name)
+{
+	return glGetUniformLocation(programID, name.c_str());;
+}
+
+void rrts::Graphics::Shader::addUniformMat3(glm::mat3 mat3, const std::string &name)
+{
+	int location = getUniformLocation(name);
+	bind();
+	if (location > -1)
+		glUniformMatrix3fv(location, 1, GL_FALSE, glm::value_ptr(mat3));
+	unbind();
+}
+
+void rrts::Graphics::Shader::addUniformMat2(glm::mat2 mat2, const std::string &name)
+{
+	int location = getUniformLocation(name);
+	bind();
+	if (location > -1)
+		glUniformMatrix2fv(location, 1, GL_FALSE, glm::value_ptr(mat2));
+	unbind();
 }

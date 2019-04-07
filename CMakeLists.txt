@@ -47,11 +47,23 @@ if(NOT EMSCRIPTEN)
     link_directories(lib/glfw)
     link_directories(lib/glm)
 
+    set(Boost_USE_STATIC_LIBS OFF)
+    set(Boost_USE_MULTITHREADED ON)
+    set(Boost_USE_STATIC_RUNTIME OFF)
+    find_package(Boost)
+
     add_executable(backend_test ${BACK_TST} project/game-framework/main_test.cpp ${BACK_SRCS} ${BACK_HDRS})
-    target_link_libraries(backend_test gtest gtest_main)
+    target_link_libraries(backend_test gtest gtest_main glfw GLEW GL GLU)
 
     add_executable(${PROJECT_NAME}_test ${TST} ${STB_SRC} project/game-main/main_test.cpp ${SRCS} ${HDRS})
-    target_link_libraries(${PROJECT_NAME}_test gtest gtest_main)
+    target_link_libraries(${PROJECT_NAME}_test gtest gtest_main glfw GLEW GL GLU)
 endif()
 
-target_link_libraries(${PROJECT_NAME}_main glfw GLEW GL GLU)
+
+if(Boost_FOUND)
+    include_directories(${Boost_INCLUDE_DIRS})
+
+    target_link_libraries(${PROJECT_NAME}_main glfw GLEW GL GLU ${Boost_LIBRARIES})
+else()
+    target_link_libraries(${PROJECT_NAME}_main glfw GLEW GL GLU)
+endif()

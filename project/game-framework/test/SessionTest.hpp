@@ -15,35 +15,34 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 */
-#ifndef RRTS_SQUARE_H
-#define RRTS_SQUARE_H
+#ifndef RRTS_SESSIONTEST_HPP
+#define RRTS_SESSIONTEST_HPP
 
-#include <RenderTarget.h>
-#include <VertexBuffer.h>
+#include <gtest/gtest.h>
+#include <Session.h>
 
-namespace rrts
+namespace
 {
-    namespace Graphics
+    class SessionTest : public ::testing::Test
     {
-        class Texture;
-
-        /**
-	 * @author jack martin
-	 */
-        class Square : public RenderTarget
+    protected:
+	SessionTest()
 	{
-	public:
-	    Square();
+		// generate random number of each test
+		randomNumber = rand();
 
-	private:
-	    rrts::Graphics::VertexBufferArray vertexBufferArray;
-	    rrts::Graphics::IndexBuffer indexBuffer;
+		rrts::User::Session::getInstance()->setFPS(randomNumber);
+	}
 
-	    void draw(RenderTarget &target, TargetRenderer &renderer) override;
+        int randomNumber;
+    };
 
-	    rrts::Graphics::VertexBuffer vertexBuffer{};
-	};
+    TEST_F(SessionTest, session_frame_count)
+    {
+	    ASSERT_EQ(randomNumber, rrts::User::Session::getInstance()->getFPS());
+	    SUCCEED();
     }
 }
 
-#endif //RRTS_SQUARE_H
+
+#endif //RRTS_SESSIONTEST_HPP

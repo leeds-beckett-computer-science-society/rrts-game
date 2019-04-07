@@ -1,9 +1,28 @@
+/*
+Copyright (C) 2019 Leeds Beckett Computer Science Society
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*/
 #include <Window.h>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <Session.h>
 #include <RenderTarget.h>
+#include <Logger.h>
+#include <sstream>
 
 #ifdef EMSCRIPTEN
 #include <emscripten.h>
@@ -32,9 +51,11 @@ void rrts::Graphics::Window::swapBuffer()
 	glfwSwapBuffers(window);
 	glFlush();
 
+	rrts::User::Logger::flush();
+
 	double currentTime = glfwGetTime();
 	frameCount++;
-	// If a second has passed.
+
 	if ( currentTime - previousTime >= 1.0 )
 	{
 		rrts::User::Session::getInstance()->setFPS(frameCount);
@@ -67,9 +88,20 @@ void GLAPIENTRY MessageCallback( GLenum source,
 	GLenum type, GLuint id, GLenum severity,
 	GLsizei length, const GLchar* message, const void* userParam )
 {
-	fprintf( stderr, "GL CALLBACK: %s type = 0x%x, severity = 0x%x, message = %s\n",
-	( type == GL_DEBUG_TYPE_ERROR ? "** GL ERROR **" : "" ),
-	type, severity, message );
+	if (type == GL_DEBUG_TYPE_ERROR)
+	{
+		std::stringstream stream;
+
+		stream << "type = " << type << " severity = " << severity << " message = " << message;
+		FATAL(stream.str())
+	}
+	else
+	{
+		std::stringstream stream;
+
+		stream << "type = " << type << " severity = " << severity << " message = " << message;
+		LOG(stream.str())
+	}
 }
 #endif
 
@@ -77,8 +109,10 @@ void rrts::Graphics::Window::createWindow(int width, int height)
 {
 	previousTime = glfwGetTime();
 
+	rrts::User::Logger::info("Initialized Window");
+
 	if (!glfwInit()) {
-		std::cout << "GLFW failed to initialize \n";
+		FATAL("GLFW Failed to initialize")
 	}
 
 #ifndef EMSCRIPTEN
@@ -86,27 +120,29 @@ void rrts::Graphics::Window::createWindow(int width, int height)
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 	glfwWindowHint(GLFW_CLIENT_API, GLFW_OPENGL_ES_API);
 #endif
+//      attempting to support opengl es 2 and opengl 3
 
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
+//	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+//	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
 
 	window = glfwCreateWindow(width, height, "Window", nullptr, nullptr);
 	if (!window) {
-		std::cout << "glfwCreateWindow failed " << std::endl;
-		exit(1);
+		FATAL("glfwCreateWindow failed")
 	}
 	glfwMakeContextCurrent(window);
 	glewExperimental = GL_TRUE;
 
 	GLenum err=glewInit();
 	if(err!=GLEW_OK) {
-		std::cout << "glewInit failed: " << glewGetErrorString(err) << std::endl;
-		exit(1);
+		FATAL(std::string("glewInit failed: ") + std::string((char *)glewGetErrorString(err)))
 	}
 #ifndef EMSCRIPTEN
 	glEnable              ( GL_DEBUG_OUTPUT );
-	glDebugMessageCallback( MessageCallback, 0 );
+	glDebugMessageCallback( MessageCallback, nullptr );
 #endif
+	glfwSwapInterval( 0 );
+
+	rrts::User::Session::getInstance()->initialize();
 }
 
 void rrts::Graphics::Window::runFrame()

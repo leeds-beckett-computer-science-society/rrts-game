@@ -1,14 +1,35 @@
+/*
+Copyright (C) 2019 Leeds Beckett Computer Science Society
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*/
 #ifndef RRTS_SHADER_H
 #define RRTS_SHADER_H
 
 #include <iostream>
 #include <vec3.hpp>
+#include <glm.hpp>
 
 namespace rrts
 {
     namespace Graphics
     {
-	class Shader
+        /**
+	 * @author jack martin
+	 */
+        class Shader
 	{
 	public:
 	    Shader();
@@ -32,10 +53,33 @@ namespace rrts
 	     * @param vec3
 	     * @param name
 	     */
-	    void addUniformVec3(glm::vec3 vec3, std::string name);
+	    void addUniformVec3(glm::vec3 vec3, const std::string& name);
+
+	    /**
+	     * Adds a Mat4 uniform to the shader
+	     * @param mat4
+	     * @param name
+	     */
+	    void addUniformMat4(glm::mat4 mat4, const std::string& name);
+
+	    /**
+	     * Adds a Mat3 uniform to the shader
+	     * @param mat3
+	     * @param name
+	     */
+	    void addUniformMat3(glm::mat3 mat3, const std::string& name);
+
+	    /**
+	     * Adds a Mat2 uniform to the shader
+	     * @param mat2
+	     * @param name
+	     */
+	    void addUniformMat2(glm::mat2 mat2, const std::string& name);
 
 	    unsigned int getId();
 	private:
+	    int getUniformLocation(const std::string& name);
+
 	    unsigned int vertexid;
 	    unsigned int fragmentid;
 	    unsigned int geometryid;

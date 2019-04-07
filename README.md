@@ -1,3 +1,5 @@
+![logo](project/resources/csc-logo.png)
+
 # RRTS Game
 This project was created by the computer science society at leeds beckett university. Everyone is free to contribute.
 
@@ -9,3 +11,4 @@ The project already has all of the libraries added as git submodules but it curr
 - GLEW
 - Emscripten (for web)
 
+ 

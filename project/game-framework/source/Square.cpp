@@ -1,3 +1,20 @@
+/*
+Copyright (C) 2019 Leeds Beckett Computer Science Society
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*/
 #include <Square.h>
 #include <Vertex.h>
 #include <glm.hpp>
@@ -5,6 +22,7 @@
 #include <VertexBufferArray.h>
 #include <IndexBuffer.h>
 #include <Shader.h>
+#include <TargetRenderer.h>
 
 /* Texture coordinate layout
 	0,1------------1,1
@@ -27,35 +45,36 @@ unsigned int indices[] = {
 
 rrts::Graphics::Square::Square()
 {
-	state.setShader(new rrts::Graphics::Shader);
-	state.getShader()->loadFromFile("shaders/es.vs", "shaders/es.fs");
+	this->setShader(new rrts::Graphics::Shader);
+	this->getShader()->loadFromFile("shaders/es.vs", "shaders/es.fs");
 
-	bufferArray.bind();
-
+	if (!vertexBufferArray.Initialized()) {
+		vertexBufferArray.bind();
+	}
 	vertexBuffer.create(&vertices, sizeof(vertices));
 
-	indexBuffer.create(indices, sizeof(indices));
+	if (!vertexBufferArray.Initialized())
+	{
+		indexBuffer.create(indices, sizeof(indices));
 
-	bufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
-	                               (void*)offsetof(rrts::Graphics::Vertex, position), 3);
+		vertexBufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
+		                               (void*)offsetof(rrts::Graphics::Vertex, position), 3);
 
-	bufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
-	                               (void*)offsetof(rrts::Graphics::Vertex, colour), 3);
+		vertexBufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
+		                               (void*)offsetof(rrts::Graphics::Vertex, colour), 3);
 
-	bufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
-	                               (void*)offsetof(rrts::Graphics::Vertex, texcoord), 2);
+		vertexBufferArray.AddAttribute(rrts::Graphics::AttribDataType::Float, sizeof(rrts::Graphics::Vertex),
+		                               (void*)offsetof(rrts::Graphics::Vertex, texcoord), 2);
 
-	bufferArray.setIndexCount(indexBuffer.getCount());
+		vertexBufferArray.setIndexCount(indexBuffer.getCount());
 
-	rrts::Graphics::VertexBufferArray::unbind();
+		rrts::Graphics::VertexBufferArray::unbind();
+	}
 }
 
-void rrts::Graphics::Square::setTexture(rrts::Graphics::Texture *texture, bool resize)
+void rrts::Graphics::Square::draw(rrts::Graphics::RenderTarget &target, rrts::Graphics::TargetRenderer &renderer)
 {
-	if (resize)
-	{
-
-	}
-
-	this->state.setTexture(texture);
+	
+	
+	renderer.draw(vertexBufferArray, indexBuffer, *this);
 }

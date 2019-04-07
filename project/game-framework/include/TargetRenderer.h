@@ -1,3 +1,20 @@
+/*
+Copyright (C) 2019 Leeds Beckett Computer Science Society
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*/
 #ifndef RRTS_RENDERTARGET_H
 #define RRTS_RENDERTARGET_H
 
@@ -12,15 +29,24 @@ namespace rrts
         class RenderTarget;
         class VertexBufferArray;
 
-	class TargetRenderer
+        /**
+	 * @author jack martin
+	 */
+        class TargetRenderer
 	{
 	public:
-	    void draw(VertexBufferArray &buffer, IndexBuffer &index, RenderState &state);
-	    void draw(RenderTarget &target);
 
-	private:
-	    glm::vec3 position;
-	    glm::vec3 transform;
+	    /**
+	     * Renders a VertexBufferArray using a IndexBuffer and a RenderState
+	     * @param buffer
+	     * @param index
+	     * @param state
+	     * @warning if the session reports that VertexBufferArrays aren't supported, this should never be called
+	     */
+	    static void draw(VertexBufferArray &buffer, IndexBuffer &index, RenderState &state);
+
+
+	    void draw(RenderTarget &target);
 	};
     }
 }
