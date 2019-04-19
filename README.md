@@ -11,4 +11,6 @@ The project already has all of the libraries added as git submodules but it curr
 - GLEW
 - Emscripten (for web)
 
+The project also uses OpenGL-Abstraction for handling the window and opengl calls 
+https://github.com/JackMartin1997/OpenGL-Abstraction
  
