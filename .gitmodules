@@ -13,3 +13,6 @@
 [submodule "lib/stb"]
 	path = lib/stb
 	url = https://github.com/nothings/stb.git
+[submodule "lib/OpenGL-Abstraction"]
+	path = lib/OpenGL-Abstraction
+	url = https://github.com/JackMartin1997/OpenGL-Abstraction

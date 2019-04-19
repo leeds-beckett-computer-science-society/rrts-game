@@ -11,9 +11,9 @@ file(GLOB_RECURSE SRCS project/game-main/source/*.cpp)
 file(GLOB_RECURSE HDRS project/game-main/include/*.h)
 file(GLOB_RECURSE TST project/game-main/test/*.hpp)
 
-file(GLOB_RECURSE BACK_SRCS project/game-framework/source/*.cpp)
-file(GLOB_RECURSE BACK_HDRS project/game-framework/include/*.h)
-file(GLOB_RECURSE BACK_TST project/game-framework/test/*.hpp)
+file(GLOB_RECURSE BACK_SRCS lib/OpenGL-Abstraction/source/*.cpp)
+file(GLOB_RECURSE BACK_HDRS lib/OpenGL-Abstraction/include/*.h)
+file(GLOB_RECURSE BACK_TST lib/OpenGL-Abstraction/test/*.hpp)
 
 set(STB_SRC lib/stb/stb_image.h)
 
